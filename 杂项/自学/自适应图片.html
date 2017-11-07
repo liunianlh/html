@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+			}
+			#father{
+				width: 30%;
+				padding-top: 30%;
+				position: relative;
+			}
+			img{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				border-radius:100% ;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="father">
+			<img src="../img/kebe (1).jpg"/>
+		</div>
+	</body>
+</html>
+<!--原理，把图片放到div里面，然后给div的宽和padding设置相同的百分比
+	，然后再给图片宽高设置100%，强制把等比例缩放的图片放到等比例的div中
+	然后用相对定位嵌套绝对定位固定位置。
+-->

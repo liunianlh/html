@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<input type="radio" name="portal" value="department" /> 自适应
+		<input type="radio" name="portal" value="content" /> JS
+		<input type="button" value="登录" onclick="denglu()" />
+	</body>
+	<script type="text/javascript">
+		function denglu() {
+			var portals = document.getElementsByName("portal");
+			for(var i = 0; i < portals.length; i++) {
+				if(portals[i].checked) {
+					if(portals[i].value === "department") {
+						location.href ="自适应图片.html";
+						
+					} else if(portals[i].value === "content") {
+						location.href ="JS选项卡.html";
+					}
+				}
+			}
+		}
+		
+	</script>
+	
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				border: #D4D4D4 5px solid;
+				width: 500px;
+				margin: 0 auto;
+				margin-top: 39px;
+				padding: 15px;
+				background-color: #EBEBEB;
+				border-radius: 10px;
+			}
+			
+			#number {
+				width: 100%;
+				font-size: 45px;
+				text-align: right;
+			}
+			
+			table {
+				width: 100%;
+			}
+			
+			.btn {
+				width: 100%;
+				font-size: 23px;
+				height: 50px;
+				border-radius: 6px;
+			}
+			
+			td {}
+			
+			#kf {
+				background-image: url(gh.PNG);
+				background-size: cover;
+			}
+			
+			.btn1 {
+				background-color: #4D4D4D;
+				color: white;
+			}
+			
+			.btn2 {
+				background-color: Gray;
+				font-size: 30px;
+				color: white;
+			}
+			
+			.btn3 {
+				background-color: #D2691E;
+				font-weight: 600;
+			}
+			
+			.gray {
+				color: #D4D4D4;
+			}
+			
+			.black {
+				color: black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<input type="text" name="" id="number" value="0" class="gray" readonly="readonly">
+			<br>
+			<table cellspacing="10px">
+				<tr>
+					<td><input type="button" name="" value="删除" class="btn btn3" onclick="del()"></td>
+					<td><input type="button" name="" value="清空" class="btn btn3" onclick="cls()"></td>
+					<td><input type="button" name="" value="清屏" class="btn btn3" onclick="cls()"></td>
+					<td><input type="button" name="" value="+/-" class="btn btn1"></td>
+					<td><input type="button" name="" value="1/x" class="btn btn1"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="num" value="1" class="btn"></td>
+					<td><input type="button" name="num" value="2" class="btn"></td>
+					<td><input type="button" name="num" value="3" class="btn"></td>
+					<td><input type="button" name="num" value="/" class="btn btn2"></td>
+					<td><input type="button" name="num" value="%" class="btn btn1"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="num" value="4" class="btn"></td>
+					<td><input type="button" name="num" value="5" class="btn"></td>
+					<td><input type="button" name="num" value="6" class="btn"></td>
+					<td><input type="button" name="num" value="*" class="btn btn2"></td>
+					<td><input type="button" name="" value="" id="kf" class="btn btn1"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="num" value="7" class="btn"></td>
+					<td><input type="button" name="num" value="8" class="btn"></td>
+					<td><input type="button" name="num" value="9" class="btn"></td>
+					<td><input type="button" name="num" value="-" class="btn btn2"></td>
+					<td rowspan="2"><input type="button" id="compute" value="=" class="btn btn1" style="height: 100%" onclick="js()"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="button" name="num" value="0" class="btn"></td>
+					<td><input type="button" name="num" value="." class="btn"></td>
+					<td><input type="button" name="num" value="+" class="btn btn2"></td>
+
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function getValue() {
+			var txt = document.getElementById("number");
+			if(txt.value == "0") {
+				txt.value = "";
+			}
+			var num = this.value;
+			txt.value += num;
+			txt.className = "black";
+		}
+		var nums = document.getElementsByName("num");
+		for(var i = 0; i < nums.length; i++) {
+			nums[i].onclick = getValue;
+		}
+
+		function js() {
+			var txt = document.getElementById("number");
+			var s = txt.value;
+			var result = eval(s);
+			txt.value = result;
+		}
+
+		function cls() {
+			var txt = document.getElementById("number");
+			txt.value = "0";
+			txt.className = "gray";
+		}
+	</script>
+
+</html>

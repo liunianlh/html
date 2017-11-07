@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>竖块级元素</title>
+
+		<style type="text/css">
+			#j1 {
+				list-style-type: none;
+				background-color: gray;
+				width: 100px;
+				font-size: 20px;
+				font-weight: bold;
+			}
+			
+			#j2 {
+				list-style-type: none;
+				background: cyan;
+				width: 80px;
+				font-size: 16px;
+				font-weight: normal;
+				display: none;
+			}
+			
+			#j1 {
+				padding-left: 0;
+			}
+			
+			#j1>li:hover #j2 {
+				display: block;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<ul id="j1">
+
+			<li>一级菜单
+
+				<ul id="j2">
+
+					<li>二级菜单
+
+						<li>二级菜单
+
+							<li>二级菜单
+
+				</ul>
+
+				<li>一级菜单
+
+					<ul id="j2">
+
+						<li>二级菜单
+
+							<li>二级菜单
+
+								<li>二级菜单
+
+					</ul>
+
+					<li>一级菜单
+
+						<ul id="j2">
+
+							<li>二级菜单
+
+								<li>二级菜单
+
+									<li>二级菜单        
+
+						</ul>
+
+						<li>一级菜单
+
+							<ul id="j2">
+
+								<li>二级菜单
+
+									<li>二级菜单
+
+										<li>二级菜单
+
+							</ul>
+
+		</ul>
+
+	</body>
+
+	<ml>

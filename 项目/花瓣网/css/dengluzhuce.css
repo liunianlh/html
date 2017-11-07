@@ -1,0 +1,162 @@
+
+/*登录框*/
+
+#denglu {
+	width: 600px;
+	height: 450px;
+	background-color: white;
+	margin-top: 180px;
+	/*position: absolute;
+	top: 180px;
+	left: 480px;*/
+/*	display: none;*/
+	border-radius: 20px;
+          z-index: 999;
+}
+
+#denglu #guan {
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	margin-right: 0px;
+	color: #A9A9A9;
+	cursor: pointer;
+	
+}
+
+
+/*遮罩层*/
+
+.da {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .3);
+	z-index: 999;
+}
+
+#denglu .img1 {
+	
+	margin-left: 210px;
+}
+
+#denglu .span1 {
+	font-size: 20px;
+	
+	margin-left: 215px;
+
+}
+
+#denglu .img2 {
+	
+	margin-left: 100px;
+	
+}
+
+#denglu .span2 {
+	font-size: 20px;
+
+	margin-left: 218px;
+	
+}
+#denglu .denglu-input1,#denglu .denglu-input2/*,#denglu .denglu-input3*/{
+	width: 400px;
+	height: 30px;
+	margin-left: 100px;
+	margin-top: 20px;
+	
+	
+}
+#denglu .denglu-input3
+{
+	width:380px ;
+	height:40px ;
+	margin-top: 20px;
+	margin-left: 110px;
+	background-color:#D44D4E ;
+}
+
+
+
+#denglu .denglu-xia{
+	margin-left: 220px;
+}
+
+
+
+#denglu .denglu-xia>a{
+	text-decoration: none;
+}
+
+
+/*注册框*/
+.zhezhao {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .3);
+	z-index: 999;
+}
+
+#zhuce {
+	width: 600px;
+	height: 450px;
+	background-color: white;
+	margin-top: 180px;
+	border-radius: 20px;
+        z-index: 999;
+}
+
+#zhuce .img1 {
+	
+	margin-left: 210px;
+}
+
+#zhuce #guan2 {
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	margin-right: 0px;
+	color: #A9A9A9;
+	cursor: pointer;
+	
+}
+
+#zhuce .span1 {
+	font-size: 20px;
+
+		margin-left: 223px;
+	
+}
+
+#zhuce .zhuce-input1,#zhuce .zhuce-input2{
+	width: 400px;
+	height: 30px;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+#zhuce .zhuce-input3{
+	width: 200px;
+	height: 30px;
+	margin-left: 100px;
+	margin-top: 20px;
+	
+}
+#zhuce .zhuce-input4{
+	border-radius: 20px;
+	background-color: #D44D4E;
+	width: 400px;
+	height: 40px;
+	margin-left: 100px;
+	margin-top: 10px;
+	
+}
+
+

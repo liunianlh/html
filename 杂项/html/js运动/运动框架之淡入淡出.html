@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				width: 200px;
+				height: 200px;
+				background: red;
+				filter:alpha(opacity:30);
+				opacity: 0.3;
+				/*透明度*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+	</body>
+	<script type="text/javascript">
+		
+		
+		
+		var oDiv=document.getElementById('div1');
+		oDiv.onmouseover=function()
+		{
+			startMove(100);
+		};
+		oDiv.onmouseout=function()
+		{
+			startMove(30);
+		};
+		//鼠标移入移出事件
+		
+		
+		var alpha=30;
+		//变化速度
+		var timer=null;
+		function startMove(iTarget)
+		//iTarget是一个形式参数
+		{
+			var oDIv=document.getElementById("div1");
+			clearInterval(timer);
+			timer=setInterval(
+				function(){
+					var speed=0;
+					if(alpha<iTarget)
+					{
+						speed=5;
+						//变化速度
+					}
+					else
+					{
+						speed=-5;
+					}
+					if(alpha==iTarget)
+					{
+						clearInterval(timer);
+					}
+					else
+					{
+						alpha+=speed;
+						oDiv.style.filter='alpha(opacity:'+alpha+')';
+						oDiv.style.opacity=alpha/100;
+						
+					}
+				},30);
+		}
+	</script>
+</html>

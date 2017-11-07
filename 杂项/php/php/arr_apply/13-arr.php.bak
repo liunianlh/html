@@ -1,0 +1,60 @@
+<?php
+//通过foreach遍历数组
+/*
+   foreach分为两种形式
+   只要键值的情况
+   foreach($数组名称 as $val){
+    循环体;
+    }
+    既要键名又要键值的情况
+    foreach($数组名称 as $key=>$val){
+      循环体;
+  }
+ */
+ $arr=[
+   5=>'a',
+   12=>'b',
+   -123=>'c',
+   34=>'d'
+ ];
+ //print_r($arr);
+ foreach($arr as $v){
+   echo $v,'<br/>';
+    echo '<h1>hello world</h1>';
+ }
+ foreach($arr as $k=>$v){
+   echo $k,'--',$v,'<br/>';
+ }
+/*Array
+(
+    [5] => a
+    [12] => b
+    [-123] => c
+    [34] => d
+)*/
+$userInfo=[
+  'username'=>'king',
+  'age'=>12,
+  'email'=>'382771946@qq.com'
+];
+// print_r($userInfo);
+/*
+Array
+(
+    [username] => king
+    [age] => 12
+    [email] => 382771946@qq.com
+)
+*/
+//foreach($userInfo as $info){
+  // echo "<h1>this is a test</h1>";
+//  echo $info,'<br/>';
+//}
+///echo '<hr/>';
+//foreach($userInfo as $k=>$v){
+//  echo $k,'--',$v,'<br/>';
+//}
+//$arr=[];
+//foreach($arr as $v){
+ // echo $v,'<br/>';
+//}

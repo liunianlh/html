@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="开始" />
+		<input type="button" value="关闭"/>
+	</body>
+	<script type="text/javascript">
+//		//*function show(){
+//			alert('a');
+//		}
+//		setInterval(show,500);
+//		//每隔500毫秒执行一次show函数，无限循环，是间隔性计时器
+//		setTimeout(show,500);*//
+//		//每隔500毫秒执行一次show函数，只执行一次，是延时性计时器
+//		
+		
+		//开启定时器，定时器的setInterval又返回值，
+		var btn=document.getElementsByTagName("input");
+		var time1=null;
+		btn[0].onclick=function(){
+			time1=setInterval(function(){
+				alert('a');
+			},1000);
+		};
+		
+		//关闭定时器，用setInterval的返回值，相对应的clearInterval
+		btn[1].onclick=function (){
+			clearInterval(time1);
+		};
+	</script>
+</html>

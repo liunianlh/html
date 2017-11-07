@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 1px;
+			}
+			
+			#calculater {
+				margin: auto;
+				margin-top: 30px;
+				border: solid 6px #2371D3;
+				border-spacing: 0px;
+			}
+			
+			#display {
+				width: 100%;
+				height: 30px;
+				border-bottom: solid 4px #2371D3;
+				font-weight: bold;
+				color: #193D83;
+				font-family: 黑体;
+				padding-left: 2px;
+			}
+			
+			.numberkey {
+				cursor: pointer;
+				width: 40px;
+				height: 30px;
+				border: solid 1px #FFFFFF;
+				background: #2371D3;
+				color: #ffffff;
+				text-align: center;
+				font-weight: bold;
+				font-family: 黑体;
+			}
+			
+			#equality {
+				cursor: pointer;
+				width: 40px;
+				height: 100%;
+				background: #2371D3;
+				border: solid 1px #FFFFFF;
+				color: #ffffff;
+				text-align: center;
+				font-weight: bold;
+				font-family: 黑体;
+			}
+			
+			.numberkey:hover {
+				background: #EA6F30;
+			}
+			
+			#equality:hover {
+				background: #EA6F30;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table id="calculater" onClick="calculater()">
+			<tr>
+				<td id="display" colspan="5" onclick="fun()">0</td>
+			</tr>
+			<tr>
+				<td class="numberkey">1</td>
+				<td class="numberkey">2</td>
+				<td class="numberkey">3</td>
+				<td class="numberkey">+</td>
+				<td class="numberkey" id="deletesign">c</td>
+			</tr>
+			<tr>
+				<td class="numberkey">4</td>
+				<td class="numberkey">5</td>
+				<td class="numberkey">6</td>
+				<td class="numberkey">-</td>
+				<td rowspan="3" id="equality" onclick="resultscalcaulte()">=</td>
+			</tr>
+			<tr>
+				<td class="numberkey">7</td>
+				<td class="numberkey">8</td>
+				<td class="numberkey">7</td>
+				<td class="numberkey">9</td>
+			</tr>
+			<tr>
+				<td class="numberkey">+/-</td>
+				<td class="numberkey">0</td>
+				<td class="numberkey">.</td>
+				<td class="numberkey">/</td>
+			</tr>
+	</body>
+	<script type="text/javascript">
+		var results = "";
+		var results2 = "";
+		var calresults = "";
+		var lastkey = "";
+		var flg = 1;
+		var re1 = /^[\*|\/].+/;
+		var re2 = /.+[\*|\/]$/;
+		var re3 = /(\+|-|\*|\/)/;
+		var re4 = /.+[\+|-|\*|\/]{1,99}.+/
+		var re5 = /\d.+/;
+
+		function calculater() {
+			if(event.srcElement.innerText == "=") {
+				return;
+			}
+			if(event.srcElement.innerText == "c") {
+				results = "";
+				display.innerText = "0";
+				return;
+			}
+			if(event.srcElement.id == "display") {
+				return;
+			}
+
+			if(results.match(re1)) {
+				display.innerText = "输入错误";
+				results = "";
+				return;
+			}
+			if(lastkey.match(re3) && event.srcElement.innerText.match(re3)) {
+				return;
+			}
+			if(lastkey == "=" && event.srcElement.innerText.match(re3)) {
+				results = calresults;
+			}
+
+			if(event.srcElement.innerText == "+/-" && results != "") {
+				if(flg == -1) {
+					results = String(results2);
+					display.innerText = results;
+					flg = -flg;
+					return;
+				}
+				results2 = results;
+				results = "-" + "(" + results + ")";
+				flg = -flg;
+				display.innerText = results;
+				return;
+			}
+
+			results += event.srcElement.innerText;
+			lastkey = event.srcElement.innerText;
+			display.innerText = results;
+		}
+
+		function resultscalcaulte() {
+			if(results.match(re1) || results.match(re2)) {
+				display.innerText = "输入错误";
+				results = "";
+				return;
+			}
+
+			calresults = eval(results);
+			display.innerText = calresults;
+			lastkey = "=";
+			results = "";
+		}
+	</script>
+
+</html>

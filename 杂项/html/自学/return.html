@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		用户名：<input type="text" id="user" /><br /><br />
+		 密码：  <input type="password" id="pwd" /><br />
+		<input type="button" value="登录" onclick="login()" />
+	</body>
+	<script type="text/javascript">
+		function login() {
+			var xm = document.getElementById("user").value;
+			var mm = document.getElementById("pwd").value;
+			if(!isvalid(xm, mm)) {
+				alert("验证失败！！！");
+				return;
+			}
+			if(xm != "zhangsan" || mm != "111111") {
+				alert("用户名或密码错误")
+				return;
+			}
+			window.location = "浮动.html"
+
+		}
+
+
+		function isvalid(username, password) {
+			if(username.length == 0 || password.length < 6) {
+				return false;
+			} else {
+				return true;
+			}
+		}
+	</script>
+
+</html>

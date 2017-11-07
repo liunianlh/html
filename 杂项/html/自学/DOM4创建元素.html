@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="text1" />
+		<input id="ainput" type="button" value="创建li"  />
+		<ul id="ul1">
+		</ul>
+	</body>
+	<script type="text/javascript">
+		/*window.onload=function()
+		{
+			var Ttext1=document.getElementById("text1");
+			var Iinput=document.getElementById("ainput");
+			var Uul=document.getElementById("ul1");
+			var ali=Uul.getElementsByTagName("li");
+			
+			Iinput.onclick=function()
+			{
+			var cLI=document.createElement("li");
+			cLI.innerHTML=Ttext1.value;
+			Ttext1.value="";
+			Uul.appendChild(cLI);
+			
+			
+			//createElement 创建元素
+			//父级.appendChild(子节点) 
+			}
+		}
+		*/
+		window.onload=function()
+		{
+			var Ttext1=document.getElementById("text1");
+			var Iinput=document.getElementById("ainput");
+			var Uul=document.getElementById("ul1");
+			
+			
+			Iinput.onclick=function()
+			{
+			var cLI=document.createElement("li");
+			var ali=Uul.getElementsByTagName("li");
+			cLI.innerHTML=Ttext1.value;
+			Ttext1.value="";
+			if(ali.length>0)
+			{
+				Uul.insertBefore(cLI,ali[0])
+				//insertBefore(子节点，在谁之前)
+			}
+			else
+			{
+				Uul.appendChild(cLI);
+			}
+			}
+		}
+	</script>
+</html>

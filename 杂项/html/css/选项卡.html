@@ -1,0 +1,82 @@
+
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<style type="text/css">
+			.shang {
+				float: left;
+			}
+			
+			.content {
+				position: absolute;
+				left: 0px;
+				top: 60px;
+				z-index: -100;
+				display: none;
+				border: 1px gray solid;
+				border-radius: 0px 8px 8px 8px;
+				width: 400px;
+				height: 300px;
+				background-color: #DCDCDC;
+			}
+			
+			.wai {
+				position: relative;
+				margin: 0 auto;
+				width: 600px;
+			}
+			
+			input[name="zu"]:checked~div {
+				display: block;
+			}
+			
+			label {
+				width: 80px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				background-color: #a9a9a9;
+				display: inline-block;
+				border: 1px gray solid;
+				margin-top: 20px;
+				border-radius: 8px 8px 0px 0px;
+				border-bottom-width: 0px;
+				position: relative;
+			}
+			
+			input[name="zu"] {
+				float: left;
+				position: absolute;
+				top: -9999px;
+				left: -9999px;
+			}
+			
+			input[name="zu"]:checked+label {
+				height: 50px;
+				line-height: 50px;
+				margin-top: 10px;
+				background-color: #dcdcdc;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wai">
+			<div class="shang">
+				<input type="radio" name="zu" checked id="s1">
+				<label for="s1">选项卡1</label>
+				<div class="content">选项卡1的内容</div>
+			</div>
+			<div class="shang"> <input type="radio" name="zu" checked id="s2"> <label for="s2">选项卡2</label>
+				<div class="content">选项卡2的内容</div>
+			</div>
+	</body>
+
+</html>

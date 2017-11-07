@@ -1,0 +1,192 @@
+.body{
+	width: 100%;
+	background-color: #F3F3F3;
+}
+/*文章容器*/
+.article-container{
+	width: 1000px;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+/*左侧容器*/
+.left-container{
+	float: left;
+	width: 63%;
+	/*height: 400px;*/
+	padding: 30px 20px 20px 40px;
+	background-color: white;
+}
+/*右侧容器*/
+.right-container{
+	float: right;
+	width: 28%;
+	/*height: 400px;*/
+	/*background-color: salmon;*/
+}
+/*文章标题*/
+.article-title h1{
+	font-size: 25px;
+}
+.article-title{
+	margin-bottom: 20px;
+}
+/*作者头像*/
+.content-left img{
+	height: 48px;
+	width: 48px;
+}
+.content-left{
+	float: left;
+	width: 10%;
+}
+.content-right{
+	float: left;
+	width: 90%;
+}
+/*文章*/
+.content-body{
+	padding-top: 20px;
+	/*height: 400px;*/
+}
+/*作者*/
+.article-author{
+	float: left;
+}
+/*发布时间*/
+.publish-date{
+	float: right;
+}
+/*默认超链接样式*/
+.detailes-link{
+	color: #2AABE6;
+}
+/*默认超链接鼠标悬停效果*/
+.detailes-link:hover{
+	text-decoration: underline;
+}
+/*发布时间*/
+.publish-date{
+	color: darkgrey;
+}
+/*文章内容*/
+.content-body p{
+	font-size: 16px;
+	line-height: 32px;
+	color: #696969;
+	text-indent: 2em;
+}
+/*分享*/
+.content-footer{
+	padding-top: 50px;
+	clear: both;
+	height: 60px;
+	/*background-color: #00BFFF;*/
+}
+/*分享文字*/
+.share-span{
+	margin-right: 10px;
+	display: inline-block;
+	color: #BBBBBB;
+}
+/*分享图标*/
+.share-link{
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	margin-right: 15px;
+	background-image: url(../images/share.png);
+	margin-bottom: -5px;
+}
+/*分享图标鼠标悬停效果*/
+.share-sina:hover{
+	background-position: 0 -30px;
+}
+.share-douban{
+	background-position: -25px 0;
+}
+.share-douban:hover{
+	background-position: -25px -30px;
+}
+.share-qq{
+	background-position: -50px 0;
+}
+.share-qq:hover{
+	background-position: -50px -30px;
+}
+.share-wechart{
+	background-position: -75px 0;
+}
+.share-wechart:hover{
+	background-position: -75px -30px;
+}
+.share-linkedin{
+	background-position: -125px 0;
+}
+.share-linkedin:hover{
+	background-position: -125px -30px;
+}
+/*返回首页样式*/
+.back-index{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color: #D7DBDF;
+	line-height: 50px;
+	color: white;
+	text-align: center;
+	padding-right:40px;
+}
+/*返回首页图标*/
+.back-icon{
+	float: left;
+	display: inline-block;
+	width: 55px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #C8CED3;
+	background-image: url(../images/back.png);
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.back-link{
+	float: left;
+	display: inline-block;
+	width: 225px;
+}
+.back-index:hover{
+	background-color: #C8CED3;
+}
+/*最新讨论*/
+.recommend{
+	margin-top: 20px;
+	width: 100%;
+	background-color: white;
+}
+.recommend{
+	padding: 20px;
+}
+.recommend-header{
+	font-size: 23px;
+	color: #2AABE6;
+}
+.recommend li{
+	display: block;
+	border-bottom: 1px dashed darkgrey;
+	padding: 15px 0;
+}
+.recommend-title{
+	display: block;
+	padding: 10px 0;
+	color: #696969;
+}
+.recommend-title:hover{
+	color: #2AABE6;
+}
+.recommend-author{
+	float: left;
+	display: inline-block;
+}
+.show-all{
+	padding-top: 30px;
+}

@@ -1,0 +1,287 @@
+*{
+	margin: 0 auto;
+}
+body{
+	background-color: #ebebeb;
+}
+.header_banner{
+	background-image: url(../img/banner.jpg);
+	background-position:cover;
+	padding-top:60px ;
+	padding-bottom: 80px;
+}
+
+
+/*导航*/
+.menu{
+	background-color: white;
+	width: 100%;
+	border-bottom:1px solid #e1e1e1 ;
+}
+.menu .navbar{
+	margin-bottom: 0px;
+	border: 0px;
+}
+.menu .nav>li>a{
+	color: #505050;
+}
+.menu .nav>li>a:hover{
+	background: #fff;
+	color: #e67e22;
+}
+.menu_active{
+	border-bottom:2px solid #e67e22;
+}
+.menu .icon-bar{
+	background-color: #505050;
+	height: 3.5px;
+}
+.navbar-toggle{
+	float: none;
+}
+
+
+/*内容*/
+.content{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.content_left{
+
+	/*background: red;*/
+	padding: 0px;
+}
+/*.content_right{
+	height: 100px;
+	background: yellow;
+}*/
+.article_img{
+	margin-top: 40px;
+	height: 450px;
+	border: 1px solid saddlebrown;
+	overflow: hidden;
+
+	background-position:cover ;
+}
+
+.article_img>img{
+	width: 100%;
+	height: 100%;
+}
+.article{
+	padding: 20px 20px;
+	background: white;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+h5{
+	color: #959595;
+	margin-top: 20px;
+}
+h5 span{
+	color:#e67e33 ;
+}
+.article p{
+	font-size:18px;
+	text-align: left;
+	margin-top: 30px;
+}
+.article button{
+	margin-top: 20px;
+	border: 0px;
+	background: #e67e22;
+	color: #fff;
+}
+.article .button{
+	padding-bottom:20px ;
+	border-bottom:1px solid #ebebeb;
+}
+.article .icon{
+	margin-top: 30px;
+	margin-bottom: 40px;
+	margin-left: 10px;
+	
+}
+.article button:hover{
+	background: #000;
+	color: #fff;
+}
+
+
+
+
+.content_right{
+	padding: 0px;
+}
+.content_right_top{
+	background: #fff;
+	padding: 20px 20px;
+	margin-top: 40px;
+}
+.content_right_top_title1{
+	font-size: 18px;
+	border-bottom: 1px solid #ededed;
+}
+.content_right_top_title1 span{
+	height: 30px;
+	width: 70px;
+	display: inline-block;
+	border-bottom:1px solid #e67e22;
+}
+.list-group{
+	margin-top: 10px;
+}
+.list-group-item{
+	border: 0px;
+}
+.link a{
+	color: #e67e22;
+}
+.link span{
+	margin-right: 5px;
+}
+
+
+
+/*左边第二部分*/
+.button2{
+	margin-top: 25px;
+	width: 100%;
+	background-color: #e67e22;
+}
+.button2:hover{
+	background: #000;
+	color: #fff;
+}
+.content_right_top_title span{
+	height: 30px;
+	width: 70px;
+	display: inline-block;
+	border-bottom:1px solid #e67e22;
+}
+
+.content_right_top_title{
+	font-size: 14px;
+	/*border-bottom: 1px solid #ededed;*/
+}
+
+.footer{
+	background-color: #202020;
+
+}
+
+
+.content_footer_top{
+	width: 25%;
+	/*background: #fff;*/
+/*	padding: 20px 20px;*/
+	margin-top: 30px;
+	float: left;
+	margin-left: 5%;
+	
+}
+.content_footer_top_title1{
+	font-size: 18px;
+	border-bottom: 1px solid #ededed;
+}
+.content_footer_top_title1 span{
+	height: 30px;
+	width: 100px;
+	display: inline-block;
+	border-bottom:1px solid #e67e22;
+}
+.content_footer_top_ul>li{
+	background-color:#202020 ;
+}
+.list-group-item_div{
+	border-bottom: 1px dashed silver;
+}
+.list-group-item_div>p{
+	margin-top: 3px;
+	margin-bottom: 13px;
+}
+.content_footer_top{
+	margin-bottom: 40px;
+}
+.content_footer_top_title1>span{
+	color: white;
+}
+.list-group-item_div>span{
+	color:#959595 ;
+}
+.list-group-item_div>span:hover{
+	color:#e67e22;
+}
+.tag-cloud{
+	margin-top: 20px;
+}
+
+
+.tag-cloud>a{
+	color:#959595 ;
+	padding: 4px;
+	 border: 1px solid #303030;
+	 text-decoration: none;
+}
+.tag-cloud>a:hover{
+	background: #e67e22;
+	color: white;
+}
+   
+   
+.list-group-item_div1>span:hover{
+	color: white;
+	background: #e67e22;
+	
+}
+
+
+.list-group-item_div1 {
+    border-bottom: 1px dashed silver;
+       color: #959595;
+      padding-bottom: 20px;
+       
+}
+.zuihou{
+	margin-bottom: 20px;
+}
+.zuihou>a{
+	margin-bottom: 8px;
+}
+/*.list-group-item_div{
+	padding-bottom: 10px;
+}*/
+.biaoqian>a{
+	border: 1px solid silver;
+	margin-left: 13px;
+}
+.footer_xia{
+	width: 100%;
+	background: #111111;
+	
+	text-align: center;
+	line-height: 50px;
+}
+
+@media (min-width:992px){
+	.content_left{	
+		width: 63%;
+		margin-right:3%;
+	}
+	/*.content_footer_top{
+		float: none;
+	}*/
+}
+@media (max-width:772px){
+	.content_footer_top{
+		float: none;
+		width: 100%;
+		
+	}
+	.content_footer_top_ul>li{
+		float: left;
+	}
+	.shipei{
+		padding-top: 140px;
+	}
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<input type="text" id="txt1" value="" />
+		<!--<label onclick="fun('+')">+</label>
+		<label onclick="fun('-')">-</label>
+		<label onclick="fun('*')">*</label>
+		<label onclick="fun('/')">/</label>-->
+		<select id="op" onchange="fun()">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+		</select>
+		<input type="text" id="txt2" value="" />
+		<label onclick="fun()">=</label>
+		<span id="jieguo">
+			
+		</span>
+	</body>
+	<script type="text/javascript">
+		function fun(){
+			var a=Number(document.getElementById("txt1").value);
+			var b=Number(document.getElementById("txt2").value);
+			var suan=document.getElementById("op").value;
+			var sp=document.getElementById("jieguo");
+			var ccc;
+			
+			switch(suan)
+			{
+				case '+':ccc=a+b;
+				break;
+				case '-':ccc=a-b;
+				break;
+				case '*':ccc=a*b;
+				break;
+				case '/':ccc=a/b;
+				break;			
+			}
+			sp.innerHTML=ccc;
+		}
+	</script>
+</html>

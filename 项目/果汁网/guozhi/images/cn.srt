@@ -1,0 +1,319 @@
+1
+00:00:00,200 --> 00:00:03,200
+《1. Video and Audio Basics》
+-----本字幕由雷天音 整理制作-----
+At this point with all the discussion around it, it would be hard to believe
+
+2
+00:00:03,200 --> 00:00:05,200
+【----QQ 568031962----】
+that you've never heard of HTML5 video.
+
+3
+00:00:05,200 --> 00:00:09,200
+【----ACELY STUDIO----】
+Still I think to dive into what HTML5 video is exactly would be useful.
+
+4
+00:00:09,200 --> 00:00:13,200
+HTML5 video is the future of video playback on the web.
+
+5
+00:00:13,200 --> 00:00:17,200
+You can see in this chart that I believe somewhere around 2015 HTML5
+
+6
+00:00:17,200 --> 00:00:21,200
+video will be the primary method for video playback on the web. Looking back,
+
+7
+00:00:21,200 --> 00:00:25,200
+when video started with plug-ins like Real Player, QuickTime and Windows Media Player,
+
+8
+00:00:25,200 --> 00:00:29,200
+there wasn't a clearly dominant plug-in at the time so what developers would
+
+9
+00:00:29,200 --> 00:00:33,200
+often try to support all three, to make sure video could reach as much of their
+
+10
+00:00:33,200 --> 00:00:34,200
+audience as possible.
+
+11
+00:00:34,200 --> 00:00:37,200
+Then Flash came on the scene and was able to gain a high enough level of
+
+12
+00:00:37,200 --> 00:00:41,200
+user adoption that Web developers could support almost all their audience
+
+13
+00:00:41,200 --> 00:00:42,200
+just through Flash.
+
+14
+00:00:42,200 --> 00:00:47,200
+To this day Flash has a solid lead over other plug-ins in both user support and
+
+15
+00:00:47,200 --> 00:00:49,200
+web developers using it for video playback.
+
+16
+00:00:49,200 --> 00:00:53,200
+Now very much thanks to Flash video has become an integral part of the web.
+
+17
+00:00:53,200 --> 00:00:59,200
+According to comScore, 83.5% of Internet users viewed online video in March 2011.
+
+18
+00:00:59,200 --> 00:01:03,200
+During the rise of Flash and video on the web, browser developers recognized the
+
+19
+00:01:03,200 --> 00:01:07,200
+importance of video and started tossing around the idea of making video a native
+
+20
+00:01:07,200 --> 00:01:11,200
+part of HTML and the browser experience just like text and images.
+
+21
+00:01:11,200 --> 00:01:16,200
+In 2007, the developers of the Opera web browser released a version of Opera
+
+22
+00:01:16,200 --> 00:01:20,200
+that included support for a video tag that mimicked the image tag and would play
+
+23
+00:01:20,200 --> 00:01:25,200
+back video in the browser using a built-in video player as opposed to a plug-in.
+
+24
+00:01:25,200 --> 00:01:29,200
+From this the specification for an HTML video tag was born. In the following
+
+25
+00:01:29,200 --> 00:01:33,200
+years rather developers and other interested parties continue to refine the
+
+26
+00:01:33,200 --> 00:01:37,200
+specification and other browsers besides Opera began building in their own video
+
+27
+00:01:37,200 --> 00:01:39,200
+players and support for the video tag.
+
+28
+00:01:39,200 --> 00:01:42,200
+Now a very important distinction should be pulled from this.
+
+29
+00:01:42,200 --> 00:01:47,200
+With HTML5 video each web browser is building their own video player, which means
+
+30
+00:01:47,200 --> 00:01:51,200
+one browser's video player could be very different from the next.
+
+31
+00:01:51,200 --> 00:01:54,200
+One of the benefits of Flash is that since it's a plug-in, it's basically the
+
+32
+00:01:54,200 --> 00:01:58,200
+same code running in each browser and from the most part you can expect Flash
+
+33
+00:01:58,200 --> 00:02:03,200
+video in Internet Explorer to work the same as it does in Firefox.
+
+34
+00:02:03,200 --> 00:02:07,200
+With HTML5 video, video could work differently in each browser because each
+
+35
+00:02:07,200 --> 00:02:10,200
+browser vendor is building their own player.
+
+36
+00:02:10,200 --> 00:02:14,200
+Different styles of controls in each browser illustrate this point.
+
+37
+00:02:14,200 --> 00:02:15,200
+You can see they look very different.
+
+38
+00:02:15,200 --> 00:02:19,200
+But despite the fact that they look different, they all have the same basic
+
+39
+00:02:19,200 --> 00:02:21,200
+controls and work as expected.
+
+40
+00:02:21,200 --> 00:02:23,200
+This is where the importance of standards comes in.
+
+41
+00:02:23,200 --> 00:02:28,200
+That specification for the HTML video tag that I mentioned is instructions for
+
+42
+00:02:28,200 --> 00:02:31,200
+browser developers on how the video tag should work.
+
+43
+00:02:31,200 --> 00:02:34,200
+And for the most part, they've all done a great job of following these
+
+44
+00:02:34,200 --> 00:02:38,200
+instructions, aside from certain browsers not supporting specific features quite yet.
+
+45
+00:02:38,200 --> 00:02:42,200
+When they do support a feature, they all support it in basically same way.
+
+46
+00:02:42,200 --> 00:02:46,200
+So we can expect the video tag to work the same in all browsers.
+
+47
+00:02:46,200 --> 00:02:49,200
+This is great because we all know what it's like when browsers don't work the same way.
+
+48
+00:02:49,200 --> 00:02:54,200
+If you're interested you can read the video tag specifications on either the W3C
+
+49
+00:02:54,200 --> 00:02:58,200
+site or the WHATWG site.
+
+50
+00:02:58,200 --> 00:03:01,200
+Both are basically the same and they are actually maintained by the same person.
+
+51
+00:03:01,200 --> 00:03:06,200
+WHATWG site I believe tends to have the most recent information, but is also
+
+52
+00:03:06,200 --> 00:03:11,200
+more likely to change, whereas the W3C version is more locked down.
+
+53
+00:03:11,200 --> 00:03:14,200
+But remember these are instructions for the browser developers and not
+
+54
+00:03:14,200 --> 00:03:17,200
+necessarily for us as web developers, though it's a great resource for us to see
+
+55
+00:03:17,200 --> 00:03:20,200
+how the video tag should work.
+
+56
+00:03:20,200 --> 00:03:26,200
+So I have talked a lot about HTML5 video specifically but what about HTML5 audio?
+
+57
+00:03:26,200 --> 00:03:29,200
+So it's called HTML5: Video and Audio in Depth, right?
+
+58
+00:03:29,200 --> 00:03:33,200
+Well, HTML5 audio is basically the little brother of HTML5 video.
+
+59
+00:03:33,200 --> 00:03:38,200
+They are both built on top of the same parent element, the media element, which
+
+60
+00:03:38,200 --> 00:03:39,200
+means they share the same DNA.
+
+61
+00:03:39,200 --> 00:03:43,200
+In fact I don't believe there's any attribute of the audio element that can't
+
+62
+00:03:43,200 --> 00:03:47,200
+be found in the video element as well, except for these specific file types
+
+63
+00:03:47,200 --> 00:03:51,200
+that the audio element supports. Which makes sense because videos also have
+
+64
+00:03:51,200 --> 00:03:55,200
+audio in them, but there are a number of attributes that the video element has
+
+65
+00:03:55,200 --> 00:03:59,200
+and audio doesn't. And they all center around the fact that you're also viewing
+
+66
+00:03:59,200 --> 00:04:00,200
+something at the same time.
+
+67
+00:04:00,200 --> 00:04:04,200
+It includes things like an option for poster frame or setting the width and
+
+68
+00:04:04,200 --> 00:04:06,200
+height of the viewable area.
+
+69
+00:04:06,200 --> 00:04:10,200
+So there may be times where I focus on video and don't mention audio just because
+
+70
+00:04:10,200 --> 00:04:14,200
+so much of what applies to video also applies to audio and in those cases you
+
+71
+00:04:14,200 --> 00:04:17,200
+can assume that what I am talking about also applies to audio.
+
+72
+00:04:17,200 --> 00:04:21,200
+But I'll be sure to include discussions and examples of audio whenever it would
+
+73
+00:04:21,200 --> 00:04:24,200
+be helpful and especially wherever there are differences.
+
+74
+00:04:24,200 --> 00:04:27,200
+So that's a pretty good background on what HTML5 video and audio are and there
+
+75
+00:04:27,200 --> 00:04:30,200
+is a good chance a lot of that isn't new to you.
+
+76
+00:04:30,200 --> 00:04:35,200
+But what can be unclear is where HTML5 is in the process of becoming that
+
+77
+00:04:35,200 --> 00:04:40,200
+-----本字幕由雷天音 整理制作-----
+-----更多Lynda字幕请访问我的人人-----
+-----联系邮箱：acely@126.com-----
+primary media playback technology and what workarounds are required to make it a reality today.
+
+78
+00:04:40,200 --> 00:04:40,200
+So next, I am going to discuss the state of HTML5 video and audio.
+

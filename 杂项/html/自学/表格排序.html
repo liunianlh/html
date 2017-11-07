@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+		<body>
+		<input type="button" value="排序"  id="btn1"/>
+		<table id="tab1" border="1" width="500">
+			<thead>
+				<td>ID</td>
+				<td>姓名</td>
+				<td>年龄</td>
+				<td>操作</td>
+			</thead>
+			<tbody>
+				<tr>
+					<td>4</td>
+					<td>李明</td>
+					<td>20</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>张三</td>
+					<td>19</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>李四</td>
+					<td>22</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>张川</td>
+					<td>11</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Wangwu</td>
+					<td>11</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>刘号</td>
+					<td>11</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+	<script type="text/javascript">
+		var oTab=document.getElementById("tab1");
+		var oBtn=document.getElementById("btn1");
+		oBtn.onclick=function(){
+			var arr=[];
+			for(var i=0;i<oTab.tBodies[0].rows.length;i++)
+			{
+				arr[i]=oTab.tBodies[0].rows[i];
+			}
+			arr.sort(function(tr1,tr2){
+				var n1=parseInt(tr1.cells[2].innerHTML);
+				var n2=parseInt(tr2.cells[2].innerHTML);
+				//通过什么排序
+				return n1-n2;
+			});
+			for(var i=0;i<arr.length;i++)
+			{
+				oTab.tBodies[0].appendChild(arr[i]);
+			}
+		}
+	</script>
+</html>

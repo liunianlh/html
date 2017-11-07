@@ -1,0 +1,88 @@
+ 贾子洋 2017/6/14 21:46:33
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+
+	<body>
+		<div id="index">
+			<div id="top">
+				<div class="biaoti">
+					<img src="img/logo.png">
+					<div class="xuexiao">
+						<span class="ming">河北软件职业技术学院优质课程网站</span>
+						<span class="wang">http://www.hbsi.edu.cn/</span>
+					</div>
+				</div>
+				<div class="denglu">
+					<div class="qianlan">
+						<div class="shenlan">
+							用户名：<input type="text" name="xm" id="user" class="txt"><br><br> 密&nbsp;&nbsp;&nbsp;&nbsp;码：
+							<input type="password" name="mm" class="txt" id="password"><br><br>
+							<input type="radio" name="checkbox1" class="dan" id="dan" value="a">管理员
+							<input type="radio" name="checkbox1" class="dan" id="dan" value="b">课程负责人
+							<input type="radio" name="checkbox1" class="dan" id="dan" value="c">授课教师<br>
+							<!--这三个-->
+							<input type="button" name="denglu" value="登录" class="anniu" onclick="denglu()">
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div id="bottom">
+				<span class="qianzi">ICopyright&copy; 2013 河北软件技术学院 All Rights Reaeserved | 技术支持：软件工程系 |</span>
+				<span class="shenzi">
+			|河北省保定市职大路1号（东校区） 邮编：071000 || 电话 0312-599275
+		</span>
+
+			</div>
+
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		var radio1 = document.getElementsByTagName('input');
+
+		function denglu() {
+			var xm = document.getElementById("user").value;
+			var mm = document.getElementById("password").value;
+
+			if(xm == "") {
+				alert("用户名不能为空");
+			} else if(mm.length < 6 || mm == "") {
+				alert("密码长度不够或者不能为空！");
+			} else if(radio1[2].checked == false && radio1[3].checked == false && radio1[4].checked == false){
+				alert("指定身份");
+			} else {
+				tiaozhuan();
+			}
+		}
+
+		function tiaozhuan() {
+			var portals = document.getElementsByName("checkbox1");
+			for(var i = 0; i < portals.length; i++) {
+				if(portals[i].checked) {
+					if(portals[i].value == "a") 
+					{
+						location.href ="自适应图片.html";
+						
+					} else if(portals[i].value == "b")
+					{
+						location.href ="JS选项卡.html";
+					}
+					else if(portals[i].value == "c")
+					{
+						location.href ="JS选项卡.html";
+					}
+				}
+			}
+		}
+		
+	</script>
+
+</html>

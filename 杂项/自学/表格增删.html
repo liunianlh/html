@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			table {
+				width: 535px;
+				text-align: center;
+			}
+			
+			th {
+				background-color: yellow;
+				font-size: 20px;
+			}
+			
+			td {
+				height: 1.5em;
+			}
+			
+			.txt {
+				width: 102px;
+				font-size: 1em;
+			}
+			
+			.btn {
+				width: 60px;
+			}
+			
+			.rad {
+				width: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="button" value='录入学生信息' onclick="insert()">&nbsp;
+		<input type="button" value='保存' onclick="save()">
+		<table border="1" cellspacing="0">
+			<tbody id="tb">
+				<tr>
+					<th>学号</th>
+					<th>姓名</th>
+					<th>性别</th>
+					<th>年龄</th>
+					<th>删除</th>
+					<th>修改</th>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+
+</html>
+<script type="text/javascript">
+	var isSave = true; //用来判断是否保存过
+	function insert() {
+		if(isSave == false) {
+			alert("先保存，再添加新记录！");
+			return;
+		}
+		var newRow = document.createElement("tr");
+		var tb = document.getElementById("tb");
+		tb.appendChild(newRow); //将新建的tr标签追加到已有的tbody标签中
+		for(var i = 1; i <= 6; i++) {
+			var newTd = document.createElement("td");
+			newRow.appendChild(newTd);
+		}
+		isSave = false;
+		//使得表格能够编辑，在td标签中添加单行文本框、按钮、单选按钮
+		var tds = newRow.childNodes;
+		tds[0].innerHTML = "<input type='text'  class='txt'>";
+		tds[1].innerHTML = "<input type='text'  class='txt'>";
+		tds[2].innerHTML = "<input type='radio' value='male' name='sex' class='rad' checked>男<input type='radio' value='female' name='sex' class='rad'>女";
+		tds[3].innerHTML = "<input type='text'  class='txt'>";
+		tds[4].innerHTML = "<input type='button' value='删除' class='btn' onclick='del(this)'>";
+		tds[5].innerHTML = "<input type='button' value='修改' class='btn' onclick='modify(this)'>";
+	}
+
+	function save() {
+		isSave = true;
+		//实现数据保存的功能
+		//该按钮实现了保存最后一行数据的功能
+		var tb = document.getElementById("tb");
+		var rows = tb.childNodes;
+		var lastRow = rows[rows.length - 1]; //表格里的最后一行
+		var cols = lastRow.childNodes; //最后一行中的所有单元格
+
+		var xh = cols[0].childNodes[0].value; //获取第一个单元格中的文本框中的文本值
+		cols[0].innerHTML = xh; //将文本值写入到单元格中
+
+		var xm = cols[1].childNodes[0].value;
+		cols[1].innerHTML = xm;
+
+		var nl = cols[3].childNodes[0].value;
+		cols[3].innerHTML = nl;
+
+		var cn = cols[2].childNodes; //4
+		if(cn[0].checked == true) {
+			cols[2].innerHTML = "男";
+		} else {
+			cols[2].innerHTML = "女";
+		}
+	}
+
+	function del(obj) {
+		//先判断当前行是否被保存过
+		if(isSave == false) {
+			alert("先保存，后删除！");
+			return;
+		}
+		var isDel = window.confirm("真的要删除吗？");
+		if(isDel == true) {
+			//点击删除按钮后，将删除该按钮所在那行tr
+			var delRow = obj.parentNode.parentNode; //找到要删除的行
+			var tb = document.getElementById("tb");
+			tb.removeChild(delRow);
+		}
+	}
+
+	function modify(obj) {
+		//只能修改保存以后的记录
+		if(!isSave) {
+			alert("先保存，后修改！");
+			return;
+		}
+		//1、如果是修改按钮，变成保存,否则将保存按钮变成修改按钮
+		if(obj.value == "修改") {
+			obj.value = "保存";
+			//2、将单元格设置为可编辑
+			//2.1找到当前要修改的行
+			var currentRow = obj.parentNode.parentNode;
+			//2.1找到该行的所有td
+			var tds = currentRow.childNodes;
+
+			var xh = tds[0].innerHTML;
+			tds[0].innerHTML = "<input type='text' value='" + xh + "'  class='txt'>"
+			var xm = tds[1].innerHTML;
+			tds[1].innerHTML = "<input type='text' value='" + xm + "'  class='txt'>"
+			var nl = tds[3].innerHTML;
+			tds[3].innerHTML = "<input type='text' value='" + nl + "'  class='txt'>"
+			var xb = tds[2].innerHTML;
+			if(xb == "男") {
+				tds[2].innerHTML = "<input type='radio' value='male' name='sex' class='rad' checked>男<input type='radio' value='female' name='sex' class='rad'>女";
+			} else {
+				tds[2].innerHTML = "<input type='radio' value='male' name='sex' class='rad'>男<input type='radio' value='female' name='sex' class='rad' checked>女";
+			}
+		} else {
+			obj.value = "修改";
+			var currentRow = obj.parentNode.parentNode;
+			var tds = currentRow.childNodes;
+
+			var xh = tds[0].childNodes[0].value;
+			tds[0].innerHTML = xh;
+			//其他单元格的变化自己编写
+		}
+	}
+</script>
+
+</html>

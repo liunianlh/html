@@ -1,0 +1,15 @@
+<?php
+    //数据类型的自动转换。
+    $a=10;
+    var_dump($a);
+    $a=12.34;
+    var_dump($a);
+    $a=False;
+    var_dump($a);
+  //php数据类型的精度
+  //php基本数据类型的精度
+  //bool<int<小数[float<double]
+  $jingdu=12+50;
+  var_dump($jingdu);
+  $jing=12 + 12.34;
+  var_dump($jing);

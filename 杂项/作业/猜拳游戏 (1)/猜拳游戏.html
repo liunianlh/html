@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="{CHARSET}">
+		<title>猜拳游戏简化版</title>
+		<style>
+	 		 body{
+		    	background-image:url(../../img/timg.jpg);
+		    	background-repeat: no-repeat;
+		    }
+		    	#a{
+		    		width: 400px;
+		    		height: 80px;
+		    		border: 1px red solid;
+		    		margin: 0 auto;
+		    		text-align: center;
+		    		font-size: 35px;
+		    		line-height: 80px;
+		    		border-radius: 50%;
+		    		background-color:silver;
+		    	}	
+		    	.shou{
+		    		border: 1px red solid;
+		    		width: 500px;
+		    		height: 100px;
+		    		margin: 0 auto;
+		    	}
+		    	.renwu{
+		    		border: 1px red solid;
+		    	}
+		    	.you,.zuo{
+		    		float: left;
+		    		margin-left: 300px;
+		    		margin-top: 100px;
+		    	}
+		</style>
+	</head>
+
+	<body>
+		<div id="a">到底鹿死谁手？？？</div>
+		
+		
+			<div class="shou">
+				<div id="">
+					
+				
+				<img src="images/zjiandao.gif" onclick="changeHand(1);" />
+				<img src="images/zshitou.gif" onclick="changeHand(2);" />
+				<img src="images/zbu.gif" onclick="changeHand(3);" />
+				</div>
+			</div>
+		
+		
+		<div class="renwu">
+			<div class="zuo">
+				<img src="images/left.gif" />
+				<img class="1bu" src="images/zbu.gif" id="robot" />
+			</div>
+			<div class="you">
+				<img src="images/bu.gif" id="my" />
+				<img class="2bu" src="images/right.gif" />
+			</div>
+		</div>
+	</body>
+	
+<script type="text/javascript">
+		//1石头 2剪刀  3布
+		var my_hand = document.getElementById("robot");
+		var robot_hand = document.getElementById("my");
+		var me_index;
+
+		function changeHand(num) {
+			switch(num) {
+				case 1:
+					my_hand.src = "images/zjiandao.gif";
+					break;
+				case 2:
+					my_hand.src = "images/zshitou.gif";
+					break;
+				case 3:
+					my_hand.src = "images/zbu.gif";
+					break;
+			}
+			me_index = num;
+			var my_index = ((parseInt(Math.random() * 1000)) % 3) + 1; //随机产生1-3的数字
+			switch(my_index) {
+				case 1:
+					robot_hand.src = "images/jiandao.gif";
+					break;
+				case 2:
+					robot_hand.src = "images/shitou.gif";
+					break;				case 3:
+					robot_hand.src = "images/bu.gif";
+					break;
+			}
+			if(me_index == 1) {
+			if(my_index == 1) {
+				document.getElementById("a").innerHTML = "平局";
+			} else if(my_index == 2) { 
+				document.getElementById("a").innerHTML = "输了";
+			} else {
+				document.getElementById("a").innerHTML = "赢了";
+			}
+		}
+
+		if(me_index == 2) {
+			if(my_index == 1) {
+				document.getElementById("a").innerHTML = "赢了";
+			} else if(my_index == 2) {
+				document.getElementById("a").innerHTML = "平局";
+			} else {
+				document.getElementById("a").innerHTML = "输了";
+			}
+		}
+
+		if(me_index == 3) {
+			if(my_index == 1) {
+				document.getElementById("a").innerHTML = "输了";
+			} else if(my_index == 2) {
+				document.getElementById("a").innerHTML = "赢了";
+			} else {
+				document.getElementById("a").innerHTML = "平局";
+			}
+		}
+		}
+		//1为剪刀2为石头3为布
+		
+
+	</script>
+
+</html>

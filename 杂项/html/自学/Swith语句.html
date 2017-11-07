@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var a=Number(window.prompt("请输入数字"));
+		var suan=window.prompt("请输入运算符");
+		var b=Number(window.prompt("请输入数字"));
+		var c;
+		switch(suan){
+			case '+':c=a+b; break;
+			case '-':c=a-b; break;
+			case '*':c=a*b; break;
+			case '/':c=a/(b=0?'分母不能为0':b);break;
+			default:'输入的运算符错误';
+		}
+		document.write(c);
+	</script>
+</html>

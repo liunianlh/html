@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>横向导航栏</title>
+		<style type="text/css">
+		
+			.one{
+				background-color: purple;
+				float: left;
+				width: 80px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				border: 1px dotted white;
+			}
+			.two{
+				
+				background-color: sandybrown;
+				position: absolute;
+				display: none;
+				left: 0px;
+				margin: 0 auto;
+			}
+			.one:hover{
+				background-color: sandybrown;
+			}
+			.one:hover .two{
+				display: block;
+			} 
+			#main{
+				width: 700px;
+				position: relative;
+			}
+			span{
+				margin-left: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="main">
+			<div class="one">新闻
+				<div class="two"><span>国际新闻</span><span>国内新闻</span><span>本地新闻</span><span>国际新闻</span><span>国内新闻</span><span>本地新闻</span><span>国际新闻</span><span>国内新闻</span><span>本地新闻</span></div>
+			</div>
+			<div class="one">军事
+				<div class="two"><span>国际军事</span><span>国内军事</span><span>本地军事</span><span>国际军事</span><span>国内军事</span><span>本地军事</span><span>国际军事</span><span>国内军事</span><span>本地军事</span></div>
+			</div>
+			<div class="one">体育
+				<div class="two"><span>国际体育</span><span>国内体育</span><span>本地体育</span><span>国际体育</span><span>国内体育</span><span>本地体育</span><span>国际体育</span><span>国内体育</span><span>本地体育</span></div>
+			</div>
+			<div class="one">财经
+				<div class="two"><span>国际财经</span><span>国内财经</span><span>本地财经</span><span>国际财经</span><span>国内财经</span><span>本地财经</span><span>国际财经</span><span>国内财经</span><span>本地财经</span></div>
+			</div>
+		</div>
+	</body>
+
+</html>

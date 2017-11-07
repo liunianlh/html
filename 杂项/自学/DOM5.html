@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="uul">
+			<li>11111<a href="#">删除</a></li>
+			<li>22222<a href="#">删除</a></li>
+			<li>33333<a href="#">删除</a></li>
+			<li>44444<a href="#">删除</a></li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+	
+	//删除元素
+		var Aa=document.getElementsByTagName("a");
+		var oul=document.getElementById("uul");
+		for (var i=0;i<Aa.length;i++)
+		{
+			Aa[i].onclick=function()
+			{
+				oul.removeChild(this.parentNode);
+			}
+		}
+	</script>
+</html>

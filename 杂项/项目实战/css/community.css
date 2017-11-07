@@ -1,0 +1,228 @@
+/*内容区域*/
+.content-container{
+	width: 100%;
+	background-color: #f3f3f3;
+	padding-top: 50px;
+}
+/*内容容器*/
+.content{
+	/*backgorund-color:#1cAAea;*/
+	background-color: white;
+	width: 1000px;
+	/*height:500px
+	 * min-height；1000px；
+	 */
+	margin: 0 auto;
+}
+/*二级导航*/
+.content-header{
+	padding: 20px;
+	border-bottom: 1px solid #eee;
+}
+/*全部按钮*/
+.btn-01{
+	width: 50px;
+	height: 35px;
+	color: white;
+	background-color: #2AABE6;
+	border: hidden;
+	border-radius: 3px;
+}
+/*二级菜单名称*/
+.header-link{
+	display: inline-block;
+	padding: 4px;
+	color: #2AABE6;
+	margin-left: 12px;
+	
+}
+/*二级菜单名称鼠标悬停效果*/
+.header-link:hover{
+	background-color: #eee;
+	border-radius: 2px;
+	
+}
+/*发帖按钮*/
+.new-link{
+	border: 1px solid #2AABE6;
+	padding: 6px 18px;
+	border-radius: 3px;
+	display: inline-block;
+    color: #2AABe6;
+    margin-left: 100px;
+}
+/*发帖按钮鼠标悬停效果*/
+.new-link:hover{
+	background-color: #2AABE6;
+	color: white;
+}
+/*文章列表*/
+.content-list li{
+	margin-left: 15px;
+	margin-right: 15px;
+	display: block;
+	padding: 12px 0 10px 0px;
+	border-bottom: 1px dashed #DDDDDD;
+	
+} 
+/*文章类型*/
+.span-icon-01{
+	display: inline-block;
+	background-color: #F5F5F5;
+	padding: 0px 8px;
+	border-radius: 2px;
+	color: #999;
+	font-size:12px;
+}
+/*title 前边绿色图标*/
+.span-icon-02{
+	width: 9px;
+	height: 11px;
+	display: inline-block;
+	background-image: url(../img/c3a7d013.icon-sc9528d32af.png);
+	background-position: -10px -2759px;
+	
+}
+/*官网图标*/
+.span-icon-03{
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+    background-image: url(../img/c3a7d013.icon-sc9528d32af.png);
+    background-position: -10px -2301px;
+    margin-bottom: -3px;
+}
+/*文章标题*/
+.content-title{
+	float: left;
+	width: 68%;
+	line-height: 30px;
+}
+/*作者*/
+.author{
+	float: left;
+	width: 15%;
+	line-height: 34px;
+}
+/*阅读量*/
+.read-number{
+	float: left;
+	width: 5%;
+	line-height: 34px;
+	color: #999;
+}
+
+
+/*发布日期*/
+.content-date{
+	float: left;
+	width: 10%;
+	line-height: 34px;
+	color: #999;
+}
+/*标题*/
+.title{
+	display: inline-block;
+	margin-left: 10px;
+	color: #666;
+}
+/*标题鼠标悬停效果*/
+.title:hover{
+	color: #2AABE6;
+	
+}
+.author a{
+	color: #2AABE6;
+}
+.author a :hover{
+	text-decoration: underline;
+}
+/*分页容器*/
+.page-container{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 30px 0 80px 0;
+	text-align: center;
+}
+/*分页按钮*/
+.page-container a{
+	display: inline-block;
+	border: 1px solid #f3f3f3;
+	padding: 5px 15px;
+	font-size: 18px;
+	color: #2AABE6;
+}
+/*分页按钮鼠标悬停效果*/
+.page-container a:hover{
+	border:1px solid #2AABE6;
+}
+/*分页按钮别选中效果*/
+#page-active{
+	background-color: #2AABE6;
+	border: 1px solid #2AABE6;
+	color: white;
+}
+/*底部*/
+.footer{
+	background-color: #0593D3;
+}
+
+
+.footer-link-container{
+	width: 1000px;
+	margin: 0 auto;
+	border-bottom: 1px solid dimgray;
+	padding: 20px 0;
+}
+.footer-link{
+	display: inline-block;
+	margin-right: 20px;
+	color: white;
+}
+.footer-link:hover{
+	text-decoration: underline;
+}
+.footer-content{
+	display: inline-block;
+	color: white;
+	margin-left:130px;
+	
+}
+
+
+/*底部链接*/
+.QR-code{
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background-image: url(../img/c3a7d013.icon-sc9528d32af.png);
+}
+/*微博二维码*/
+.sina{
+	margin-left: 50px;
+	background-position: -10px -484px;
+}
+/*微信二维码*/
+.wechart{
+	margin-left: 20px;
+	background-position: -10px -84px;
+}
+.bottom{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 10px 1;
+}
+.bottom span{
+	display: inline-block;
+	color: white;
+	margin-right: 20px;
+	font-size: 12px;
+}
+.bottom img{
+	width: 12px ;
+	height: 12px;
+}
+#copyright{
+	margin-right: 0;
+	float: right;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="ul1">
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		var oul=document.getElementById("ul1");
+		for (var i=0;i<oul.childNodes.length;i++)
+		{
+			//另一种方法，把childNodes换成children。
+			//当nodeType==3，该节点是文本节点
+			//当nodeType==1，该节点是元素节点
+			//alter(oul.childNodes[i].nodeType);
+			//nodeType是测试节点是什么类型的,childNodes是为了找到节点
+			if(oul.childNodes[i].nodeType==1)
+			{
+				oul.childNodes[i].style.background="red";
+			}
+		}
+	</script>
+</html>

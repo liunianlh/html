@@ -1,0 +1,61 @@
+<?php
+header('content-type:text/html;charset=utf-8');
+//echo '<pre>';
+//$arr=range('a','z');
+// print_r($arr);
+// echo $arr[0],'<br/>';
+// echo $arr[1],'<br/>';
+// echo $arr[2],'<br/>';
+//count()得到数组中元素的个数
+// echo count($arr),'<br/>';
+// $var=123;
+// echo count($var),'<br/>';
+// $var=null;
+// echo count($var),'<br/>';
+// exit;
+// for($i=0;$i<=25;$i++){
+//   echo $arr[$i],'<br/>';
+// }
+//for循环只能遍历下标连续的索引数组
+// for($i=0,$count=count($arr)-1;$i<=$count;$i++){
+//   echo $arr[$i],'<br/>';
+// }
+
+//$arr=[
+//  'username'=>'k',
+ // 'age'=>12
+//];
+
+//for($i=0,$count=count($arr)-1;$i<=$count;$i++){
+//   echo $arr[$i];
+// }
+
+
+//echo count($arr);//2
+//var_dump($arr);
+//print_r($arr);
+header('content-type:text/html;charset=utf-8');
+$arr = array(
+    '2010'=>array('令狐冲',"59"),
+    '2011'=>array('林平之',"44"),
+    '2012'=>array('曲洋',"89"),
+    '2013'=>array('任盈盈',"92"),
+    '2014'=>array('向问天',"93"),
+    '2015'=>array('任我行',"87"),
+    '2016'=>array('冲虚',"58"),
+    '2017'=>array('方正',"74"),
+    '2018'=>array('岳不群',"91"),
+    '2019'=>array('宁中则',"90"),
+);
+$k = Array_keys($arr);//获取数组的键名
+$arr2 = Array_values($arr);//获取数组的值
+ 
+$str = null;
+for($i=0;$i<count($arr2);$i++){
+    $new_str = null;
+     for($n=0;$n<count($arr2[$i]);$n++){
+        $new_str.= $arr2[$i][$n];
+     }
+    $str.= $k[$i].'=='.$new_str."";
+}
+echo $str;

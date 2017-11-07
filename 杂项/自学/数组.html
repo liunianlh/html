@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#text{
+				width: 100px;
+			}
+			#text1{
+				width: 150px;
+				height: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<span>请输入要入栈的数据:</span>
+		<input type="text" value="" id="text"/><br /><br  />
+		<input type="button" value="入栈" />
+		<input type="button" value="出栈" />
+		<input type="button" value="查看数组中的数据" /><br /><br />
+		
+		<textarea  rows="10" cols="20" id="dh"></textarea>
+	</body>
+	<script type="text/javascript">
+		var text1=document.getElementsByTagName("input");
+		var a=[];
+		var wenben=document.getElementById("dh");
+		
+		
+		text1[1].onclick=function()
+		{
+			a.push(text1[0].value);
+			wenben.value=a;
+			text1[0].value="";
+		}
+	
+		text1[2].onclick=function()
+		{
+			a.pop(text1[0].value);
+			wenben.value=a;
+		}
+		
+		text1[3].onclick=function()
+		{
+			wenben.value=a;
+		}
+	</script>
+	
+</html>

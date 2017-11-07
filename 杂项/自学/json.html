@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		var json = {
+			a: 12,
+			b: 2,
+			c: 'wc'
+		};
+		
+		/*数组和json
+		var shu=[11,12,13]
+		
+		for (var i=0;i<=shu.length;i++)
+		{
+			alert('第' + i + '个数:' + shu[i])
+		}
+
+		for(var i in shu)
+		{
+			alert('第' + i + '个数:' + shu[i]);
+		};
+		*/
+		alert(json['a']);
+		for(var i in json) {
+			alert('第' + i + '个数:' + json[i])
+		};
+
+			/*json的下标是a,b,c
+			      数组的下标是0,1,2
+			*/
+	</script>
+
+</html>

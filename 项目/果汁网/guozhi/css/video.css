@@ -1,0 +1,219 @@
+/**{
+    margin: 0 auto;
+    padding: 0;
+}
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 600px;
+    position:relative;
+}
+video{
+    width: 600px;
+    height: 480px;
+}
+
+#controls{
+    width: 100%;
+    line-height: 50px;
+    background-color: threedface;
+    position: absolute;
+    top: 408px;
+}
+所有div设置为行内元素
+#controls>div{
+    display: inline-block;
+    vertical-align: middle; 加入它可以实现垂直居中
+}
+
+
+#controls_play{
+    width: 32px;
+    height:32px;
+    background-image: url("../images/control_01.png");
+    background-repeat: no-repeat;
+    background-position: 0px -32px;
+    margin-left: 24px;
+    
+}
+
+#controls_play_bar{
+    width: 320px;
+    background-color: white;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#controls_volume_img{
+    width: 30px;
+    height: 30px;
+}
+
+#controls_volume_img>img{
+    width: 100%;
+}
+
+.play_pro_canvas{
+    position: absolute;
+    left: 0;
+
+}*/
+
+
+
+
+
+
+
+
+
+.mian_header{
+	width: 1200px;
+	   min-height: 160px;
+    width: 100%;
+	background-image: url(../images/b5.jpg);
+	background-size:cover;
+margin-bottom: 60px;
+}
+
+
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+#main{
+    width: 600px;
+    position:relative;
+}
+video{
+    width: 600px;
+    height: 480px;
+}
+
+#controls{
+    width: 100%;
+    line-height: 50px;
+    background-color: #F1F1F1;
+    position: absolute;
+    top: 408px;
+}
+/*所有div设置为行内元素*/
+#controls>div{
+    display: inline-block;
+    /*vertical-align: middle;*/ /*加入它可以实现垂直居中*/
+}
+
+
+#controls_play{
+    vertical-align: middle;
+    width: 32px;
+    height:32px;
+    background-image: url("../images/control_01.png");
+    background-repeat: no-repeat;
+    background-position: 0px -32px;
+    margin-left: 10px;
+}
+
+#controls_play_bar{
+    width: 320px;
+    background-color: white;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#controls_volume_img{
+    width: 30px;
+    height: 35px;
+}
+
+#controls_volume_img>img{
+    width: 100%;
+}
+
+
+#controls_volume_bar{
+    position: relative;
+    width:25px;
+    height: 80px;
+    background-color: #f1f1f1;
+}
+#controls_volume_triangle{
+    position: absolute;
+    bottom:11px;
+    left: 6px;
+    border-left: 18px dashed white;
+    border-right: 18px none transparent;
+    border-top: 18px dashed transparent;
+    transform: rotate(-45deg);
+   
+}
+
+.play_pro_canvas{
+    position: absolute;
+    left: 0;
+
+}
+.play_volume_canvas{
+    position: absolute;
+    left: 8px;
+    transform: rotate(180deg);
+    background-color: gainsboro;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#controls_volume{
+    position: relative;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+#controls_volume_controls{
+    position: absolute;
+    top:-102px;
+    width: 30px;
+    height: 100px;
+    /*background-color: #f1f1f1;*/
+    
+}
+
+#controls_full_screen{
+    width: 46px;
+    height: 100%;
+    
+}
+
+#controls_full_screen>img{
+    display: inline-block;
+    width: 32px;
+    vertical-align: middle;
+    margin-left: 7px;
+}
+
+
+
+.play{
+    background-position: 0px -32px;;
+}
+
+
+.pause{
+    background-position: 5px 5px;
+}
+
+

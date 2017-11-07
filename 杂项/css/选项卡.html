@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			.yi{
+				width: 100px;
+				height: 40px;
+				background-color:silver ;
+				border: 2px solid black;
+				border-color: black black seagreen black;
+				float: left;
+				
+			}
+			.neirong{
+				width: 500px;
+				height: 500px;
+				background-color:seagreen;
+				position: absolute;
+				top:42px;
+				left: 0px;
+				display: none;
+			}
+			input{
+				width: 500px;
+				height: 500px;
+				background-color:seagreen;
+				position: absolute;
+				top:42px;
+				left: 0px;
+				display: none;
+			}
+			.yi:not(checked) ~  .neirong{
+				display: block;
+			}
+			.yi:checked ~  .neirong{
+				display: none;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="yi">
+		<input class="neirong" type="checkbox">
+			111
+		
+		</div>
+		<div class="yi">
+		<input class="nr" type="checkbox">
+			222111
+	
+	
+		</div>
+		
+	</body>
+</html>

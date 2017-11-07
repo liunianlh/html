@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>jisuanqi</title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.Jsq {
+				height: 320px;
+				width: 400px;
+				background-color: skyblue;
+				border-radius: 5px;
+				margin: 0 auto;
+			}
+			
+			#nav {
+				height: 30px;
+				width: 360px;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			
+			table {
+				height: 250px;
+				width: 330px;
+				margin-top: 5px;
+				margin-left: 15px;
+				cursor: pointer;
+				/*鼠标变小手*/
+			}
+			
+			table tr th {
+				border: 1px antiquewhite solid;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="Jsq">
+			<input type="text" value="0" id="nav" />
+			<table cellpadding="2px" cellspacing="10px" border="0px black ">
+				<tr>
+					<th bgcolor="#ffA070">删除</th>
+					<th bgcolor="#ffA070">清空</th>
+					<th bgcolor="#ffA070">清屏</th>
+					<th bgcolor="#002099">+/-</th>
+					<th bgcolor="#002099">1/x</th>
+				</tr>
+				<tr>
+					<th onclick="fun()">1</th>
+					<th onclick="fun()">2</th>
+					<th onclick="fun()">3</th>
+					<th bgcolor="#0064B5" onclick="fun()">/</th>
+					<th bgcolor="#002099">%</th>
+				</tr>
+				<tr>
+					<th onclick="fun()">4</th>
+					<th onclick="fun()">5</th>
+					<th onclick="fun()">6</th>
+					<th bgcolor="#0064B5" onclick="fun()">*</th>
+					<th bgcolor="#002099 ">^</th>
+				</tr>
+				<tr>
+					<th onclick="fun() ">7</th>
+					<th onclick="fun() ">8</th>
+					<th onclick="fun() ">9</th>
+					<th bgcolor="#0064B5" onclick="fun()">-</th>
+					<th rowspan="2" bgcolor="#002099" onclick="fun()">=</th>
+				</tr>
+				<tr>
+					<th colspan="2" onclick="fun()">0</th>
+					<th onclick="fun()">.</th>
+					<th bgcolor=" #0064B5 " onclick="fun()">+</th>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script type="text/javascript">
+		
+   			
+ 			
+	</script>
+
+</html>

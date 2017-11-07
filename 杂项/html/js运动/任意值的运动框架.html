@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>无标题文档</title>
+		<style>
+			#div1 {
+				width: 200px;
+				height: 200px;
+				margin: 20px;
+				float: left;
+				background: yellow;
+				border: 10px solid black;
+				filter: alpha(opacity: 30);
+				opacity: 0.3;
+			}
+			
+			#div2 {
+				width: 200px;
+				height: 200px;
+				margin: 20px;
+				float: left;
+				background: yellow;
+				border: 10px solid black;
+				font-size: 14px;
+			}
+		</style>
+		<script>
+		
+		////调用运动框架
+			window.onload = function() {
+				var oDiv1 = document.getElementById('div1');
+
+				oDiv1.onmouseover = function() {
+					startMove(this, 'opacity', 100);
+				};
+				oDiv1.onmouseout = function() {
+					startMove(this, 'opacity', 30);
+				};
+				
+				//更改参数，从而识别操作
+				var oDiv2 = document.getElementById('div2');
+
+				oDiv2.onmouseover = function() {
+					startMove(this, 'width', 400);
+				};
+				oDiv2.onmouseout = function() {
+					startMove(this, 'width', 200);
+				};
+			};
+
+			
+
+
+
+			function getStyle(obj, name) {
+				if(obj.currentStyle) {
+					return obj.currentStyle[name];
+				} else {
+					return getComputedStyle(obj, false)[name];
+				}
+			}
+
+			function startMove(obj, attr, iTarget) {
+				clearInterval(obj.timer);
+				obj.timer = setInterval(function() {
+					var cur = 0;
+
+					if(attr == 'opacity') {
+						cur = parseFloat(getStyle(obj, attr)) * 100;
+
+					} else {
+						cur = parseInt(getStyle(obj, attr));
+						//为了解决小数问题
+					}
+
+					var speed = (iTarget - cur) / 6;
+					speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+
+					if(cur == iTarget) {
+						clearInterval(obj.timer);
+					} else {
+						if(attr == 'opacity') {
+							obj.style.filter = 'alpha(opcity:' + (cur + speed) + ')';
+							obj.style.opacity = (cur + speed) / 100;
+						} else {
+							obj.style[attr] = cur + speed + 'px';
+						}
+					}
+				}, 30);
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="div1"></div>
+		<div id="div2">变宽</div>
+	</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script src="js/jquery-1.12.4.js" ></script>
+		<script>
+			$(function(){
+				var div = $('<div>我是新创建的div</div>');
+				div.appendTo('body');
+				//7:40
+				
+				
+				
+				
+				var link1=$('<a>',{
+					text:'baidu',
+					href:'http://www.baidu.com',
+					target:'_blank',
+					title:'goto baidu'
+				});
+				link1.appendTo('body');
+				
+				
+				
+				var link2=$('<a>我是百度</a>').attr({
+					href:'http://www.baidu.com',
+					target:'_blank',
+					title:'goto baidu'
+				});
+				link2.appendTo('body');
+			})
+		</script>
+	</body>
+</html>

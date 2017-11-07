@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="0.2">
+		<!--刷新页面-->
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+				
+			.fu{
+				height: 100px;
+				width: 100px;
+				float: left;
+			}
+			#zhong{
+				margin:0px auto;
+				width: 1000px;
+				border:2px red solid;
+				height: 1000px;
+			}
+		</style>
+		
+	</head>
+
+	<body>
+	
+		<div id="zhong" onclick="dianji()">
+		
+			<script type="text/javascript">
+			
+			
+				var by = document.getElementById("zhong");
+		
+			by.innerHTML = '';
+				for(var b = 1; b <= 100; b++) {
+					var c = "#"
+					for(var a = 1; a <= 6; a++) {
+						var num = parseInt(Math.random() * 16);
+						num = num.toString(16);
+						c = c + num;
+					}
+					by.innerHTML+= "<div class='fu'  style='background-color:" + c + "'></div>";
+
+//					document.write("<div class='fu' style='background-color:" + c + "'></div>");
+					}
+				
+			
+			</script>
+			<div style="clear:both;"></div><!--清除浮动-->
+		
+		</div>
+
+	</body>
+	<!--<script type="text/javascript">
+	
+	var c="#"
+	
+	for( var a=1;a<=6;a++)
+	{
+		var num=parseInt(Math.random()*16);
+		num=num.toString(16);
+		c=c+num;
+	}
+	window.document.body.bgColor=c;
+	</script>-->
+
+</html>

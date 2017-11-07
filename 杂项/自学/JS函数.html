@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: saddlebrown;
+			}
+		</style>
+	</head>
+	<body>
+	
+	
+	<div id="dianji">
+		<input type="text" id="shu" value="" />
+		<input type="text" id="shu1" value="" />
+		<input type="text" id="he" value="" />
+	</div>
+	
+	</body>
+	<script type="text/javascript">
+		var ee=document.getElementsByTagName("input");
+		var aa=document.getElementById("dianji");
+		
+		
+		aa.onclick=function(){
+			ee[2].value= Number(ee[0].value)+Number(ee[1].value);
+		}
+	</script>
+</html>

@@ -1,0 +1,204 @@
+@charset "utf-8";
+/*内容区域设置样式*/
+#content {
+	width: 100%;/*设置宽度*/
+	min-width: 1000px;/*设置最小宽度*/
+	background: rgb(243,243,243);/*这是背景颜色*/
+	padding-top: 30px;/*设置顶部内边距*/
+}
+/*二级导航设置*/
+.content-top {
+	width: 1000px;/*设置宽度*/
+	background-color: #fff;/*设置背景颜色*/
+	border: 1px solid #e9e9e9;/*设置边框*/
+}
+/*第一个二级导航样式*/
+.content-top-one {
+	border-bottom: 1px dashed #e9e9e9;/*设置底部边框*/
+	margin: 0px 20px;/*设置外边距*/
+	padding: 20px 0px;/*设置内边距*/
+}
+/*设置标题*/
+.content-top-one span {
+	font-weight: bold;/*字体加粗*/
+	display: inline-block;/*转化为行内块元素*/
+	float: left;/*左浮动*/
+	margin-right:15px;/*右侧的外边距*/
+	line-height: 30px;/*行高*/
+
+}
+/*设置标签区域*/
+.content-top-one ul {
+	width: 846px;
+	float: left;
+	list-style: none;/*设置图标*/
+    
+}
+/*设置每个标签的样式*/
+.content-top-one li {
+	margin-right:22px;
+	color:#1caaea;
+	float: left;
+	line-height: 30px;
+}
+.content-top-one li a {
+	color:#666;
+}
+.content-top-one li a:hover {
+	color:#1caaea;
+}
+
+/*设置第二个二级导航的样式*/
+.top-two {
+	height: 60px;/*设置高度*/
+    overflow-y: hidden;/*y轴溢出隐藏*/
+}
+
+.more {
+	width: 55px;
+	float:right;
+	line-height: 30px;
+}
+.more a {
+	color: #1caaea;
+	font-weight: normal;
+}
+.more a:hover {
+	text-decoration: underline;
+}
+/*设置更多后边的图标*/
+#more-icon {
+	width: 0;
+    height: 0;
+    border-left: 5px solid transparent;/*设置透明色边框*/
+    border-right: 5px solid transparent;
+    border-top: 10px solid #aaa;
+    margin-left:10px;
+    display: inline-block;
+}
+
+/*设置第三个二级导航*/
+.top-three {
+	border:0px;
+}
+/*设置分类*/
+.content-nav {
+	width: 1000px;
+	background-color: #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.content-nav a {
+	padding: 15px;
+	display: inline-block;
+	color:#696969;
+	font-size: 16px;
+	margin-right:20px;
+}
+.content-nav a:hover {
+	color:#1caaea;
+}
+/*设置分类里面第一个a标签*/
+.content-nav a:first-of-type {
+	color:#1caaea;
+}
+/*设置内容样式*/
+.content-info {
+	width: 1000px;
+	margin-top:20px;
+}
+/*设置单元格的内容*/
+.content-one-content {
+	width: 228px;
+	height: 320px;
+	float:left;
+	background-color: #fff;
+	margin-right: 29px;
+	position: relative;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+/*清除外边距*/
+.clear-margin {
+	margin-right: 0px;
+}
+/*单元格顶部内容*/
+.one-top {
+	width: 100%;
+	height: 140px;
+	position: relative;
+}
+/*设置单元格图片*/
+.one-top img {
+	width: 228px;
+	height: 140px;
+}
+/*设置遮罩层*/
+.one_top_hidden {
+	display: none;
+	height: 80px;
+    padding: 45px 15px 15px 15px;
+    background: rgba(0,0,0,.2);
+	position: absolute;
+	bottom: 0px;
+	width: 198px;
+} 
+/*设置文字水平居中方式*/
+.text-align {
+	text-align: left;
+}
+/*设置内容*/
+.one-center {
+	padding: 9px 15px 0px 15px;
+	font-size: 16px;
+	line-height: 23px;
+}
+.one-center a {
+	color: #000;
+	display: block;
+	height: 65px;
+}
+.one-center-name {
+	display:block;
+}
+.one-center-info {
+	display:block;
+	/*溢出隐藏，省略号代替*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.comment-info {
+	font-size: 16px;
+	margin-top:15px;
+	color:#aaa;
+}
+.comment-info p {
+	color: red;
+}
+/*设置底部标签*/
+.one-bottom {
+	width: 68px;
+	height: 18px;
+	text-align: center;
+    background-color: #fef0c9;
+    border-radius: 8px;
+    line-height: 18px;
+    left: 15px;
+    position: absolute;
+    bottom: 15px;
+    
+}
+.one-bottom a {
+	font-size: 12px;
+	color: #f1a61a;
+}
+.postion {
+	margin: 0px 10px;
+}
+.position1 {
+	margin: 10px 0px;
+}
+.content-info a:hover {
+	text-decoration: underline;
+}

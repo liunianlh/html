@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+/*轮播图*/
+/*轮播图的占用区域*/
+#carousel-container {
+	width: 100%;/*设置宽度*/
+	min-width: 1000px;/*设置最小宽度*/
+	background: rgb(243,243,243);
+}
+/*轮播图的图片样式*/
+.carousel-container-img {
+	background-image: url(../images/lunbo1.png);/*引入轮播图图片为背景图*/
+	background-repeat: no-repeat;/*设置背景图不允许重复*/
+	background-position: center 0px;/*调整背景图片的作用区域*/
+	height: 400px;/*设置高度*/
+	width: 100%;/*设置宽度*/
+	min-width: 1000px;/*设置最小宽度*/
+	position: relative;/*父元素设置为相对定位*/
+}
+/*轮播图底部图标的位置*/
+.carousel-container-img div {
+	position: absolute;/*设置为绝对定位*/
+	bottom: 20px;/*距底部距离*/
+	left:40%;/*距左侧的距离*/
+}
+/*轮播图底部图标每一个图标占用区域*/
+.carousel-container-img a {
+	display: inline-block;/*转化为行内块元素*/
+	height: 30px;/*设置高度*/
+}
+.carousel-container-img span {
+	margin-top: 15px;/*设置距顶部外边距*/
+	display: inline-block;/*转化为行内块元素*/
+	float: left;/*设置左浮动*/
+	width: 45px;/*设置宽度*/
+	background: RGBA(211,237,244, 0.5);/*设置背景透明度*/
+	height: 2px;/*高度*/
+	margin-right:5px;/*设置距右边外边距*/
+}
+/*轮播图选中图片样式对应图标样式*/
+#img-active {
+	margin-top: 11px;/*设置距顶部外边距*/
+	height: 10px;/*高度*/
+	background: RGBA(211,237,244, 0.9);/*设置背景透明度*/
+}
+/*-------------------------------第一部分内容---------------------------------------*/
+
+/*内容区域*/
+#content {
+	width: 1000px;/*设置宽度*/
+	background: rgb(243,243,243);/*背景颜色*/
+	padding-top: 10px;/*距顶部的内边距*/
+}
+/*内容区域的大标题*/
+.content-title {
+	padding-top:30px;/*距顶部的内边距*/
+	color:#1caaea;/*设置字体颜色*/
+	padding-bottom: 5px;/*距底部的内边距*/
+	line-height: 100%;/*设置行高*/
+	min-width: 1000px;/*设置最小宽度*/
+	font-size:20px;/*设置字体大小*/
+}
+/*内容区域的大标题左边区域*/
+.content-title span {
+	float:left;/*设置浮动*/
+	display: inline-block;/*设置为行内块元素*/
+	font-size:20px;/*设置字体大小*/
+}
+.content-title a {
+	color:#1caaea;/*字体颜色*/
+	float:right;/*浮动右侧*/
+}
+#content a:link {/*访问前*/
+	text-decoration:none;/*去除文字下划线*/
+}
+#content a:visited {/*访问后*/
+	text-decoration:none;/*去除文字下划线*/
+}
+#content a:hover {/*鼠标划过时*/
+	text-decoration:underline;/*设置文字下划线*/
+}
+/*推荐课程内容区域*/
+.content-one {
+	width: 100%;/*设置宽度*/
+}
+/*推荐课程每个区域位置*/
+.content-one-content {
+	width: 228px;/*设置宽度*/
+	height: 298px;/*设置高度*/
+	float:left;/*设置浮动*/
+	background-color: #fff;/*设置背景颜色*/
+	margin-right: 29px;/*距右边的外边距*/
+	position: relative;/*父元素设置为相对定位*/
+	margin-bottom: 10px;/*距底部的外边距*/
+	margin-top: 10px;/*设置距顶部的外边距*/
+}
+/*设置距右侧的外边距*/
+.clear-margin {
+	margin-right: 0px;
+}
+/*设置区域图片的位置*/
+.one-top {
+	width: 100%;/*设置宽度*/
+	height: 140px;/*设置高度*/
+	position: relative;
+}
+/*设置图片的尺寸*/
+.one-top img {
+	width: 228px;
+	height: 140px;
+}
+/*设置图片底部的导航*/
+.one_top_show {
+	display: block;/*转化为块元素*/
+	height: 25px;/*设置高度*/
+    padding-left: 15px;/*距左边的内边距*/
+    color: #fff;/*设置字体颜色*/
+    background: rgba(0,0,0,.5);/*设置背景颜色的透明度*/
+	position: absolute;/*设置定位*/
+	bottom: 0px;/*距底部的距离*/
+	width: 213px;/*设置宽度*/
+	line-height: 25px;/*文字的行高*/
+}
+/*设置图片的遮罩层*/
+.one_top_hidden {
+	display: none;/*设置隐藏*/
+	height: 80px;/*设置高度*/
+    padding: 45px 15px 15px 15px;/*设置内边距*/
+    color: #fff;/*设置字体颜色*/
+    background: rgba(0,0,0,.5);/*设置背景颜色*/
+	position: absolute;/*设置绝对定位*/
+	bottom: 0px;/*距离底部距离*/
+	width: 198px;/*设置宽度*/
+	text-align: center;/*文字水平居中*/
+} 
+/*设置文字的水平方式*/
+.text-align {
+	text-align: left;
+}
+/*设置中间区域内容样式*/
+.one-center {
+	padding: 9px 15px 0px 15px;/*设置内边距*/
+	font-size: 16px;/*设置字体大小*/
+	line-height: 23px;/*设置行高*/
+}
+/*设置标题样式*/
+.one-center a {
+	color: #000;
+	display: block;/*设置为块元素*/
+}
+.one-center-name {
+	display:block;
+}
+.one-center-info {
+	display:block;
+	/*溢出隐藏，省略号代替*/
+    white-space: nowrap;/*禁止折行*/
+    overflow: hidden;/*隐藏移除内容*/
+    text-overflow: ellipsis;/*省略号代替*/
+}
+.comment-info {
+	font-size: 16px;
+	margin-top:15px;
+	color:#aaa;
+}
+/*底部按钮*/
+.one-bottom {
+	width: 68px;/*设置宽度*/
+	height: 18px;/*设置高度*/
+	text-align: center;/*文字水平居中*/
+    background-color: #fef0c9;/*设置背景颜色*/
+    border-radius: 8px;/*边框设置圆角*/
+    line-height: 18px;/*行高*/
+    left: 15px;/*左侧距离*/
+    position: absolute;/*设置固定定位*/
+    bottom: 15px;/*底部距离*/
+    
+}
+.one-bottom a {
+	font-size: 12px;
+	color: #f1a61a;
+}
+
+/*----------------------------第二部分内容---------------------------*/
+/*第二部分内容样式*/
+.content-two {
+	width: 100%;
+}
+/*部分区域占有内容*/
+.content-two-content {
+	width: 230px;
+	height: 158px;
+	float:left;
+	margin: 10px 26px 10px 0px; 
+	position: relative;
+}
+/*设置图片样式*/
+.content-two-content img {
+	width: 230px;
+	height: 130px;
+	margin-bottom: 10px;
+}
+/*设置标题样式*/
+.content-two-content a {
+	color: rgb(136, 136, 136);
+}
+/*鼠标悬浮隐藏区域的样式*/
+#content-two-content-hidden {
+	width: 230px;
+	height: 130px;
+	position: absolute;
+	background: rgba(0,0,0,.5);
+	display: none;
+	top:0px;
+	left: 0px;
+	text-align: center;
+	line-height: 130px;
+}
+#content-two-content-hidden span {
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #fff;
+    margin: 5px!important;/*设置边框提高优先级*/
+    padding: 0 10px;
+    color: #fff;
+    display: inline-block;
+}
+/*-----------------------第三部分内容----------------------------*/
+.postion {
+	margin: 10px 0px;
+}
+/*内容区域的大标题*/
+.content-title {
+	padding-top:30px;/*距顶部的内边距*/
+	color:#1caaea;/*设置字体颜色*/
+	padding-bottom: 5px;/*距底部的内边距*/
+	line-height: 100%;/*设置行高*/
+	min-width: 1000px;/*设置最小宽度*/
+	font-size:20px;/*设置字体大小*/
+}
+/*内容区域的大标题左边区域*/
+.content-title span {
+	float:left;/*设置浮动*/
+	display: inline-block;/*设置为行内块元素*/
+	font-size:20px;/*设置字体大小*/
+}
+/*第三部分内容*/
+.content-three {
+	width: 100%;
+}
+/*第三部分单元格样式*/
+.content-three-content {
+	width: 222px;
+	height: 138px;
+	float:left;
+	border: 1px solid #ddd;/*设置边框*/
+	background-color: #fff;
+	margin: 18px 29px 10px 4px; /*设置外边距*/
+}
+/*最后一个单元格设置样式*/
+.content-three-content:last-of-type {
+	width: 222px;
+	height: 138px;
+	float:left;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	margin: 18px 0px 10px 4px;
+}
+.content-three-content div {
+	width: 222px;
+	height: 138px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	position: relative;
+	bottom:4px;
+	right: 4px;
+}
+.content-three-content img {
+	width: 224px;
+	height: 140px;
+	position: absolute;
+	bottom:2px;
+	right: 2px;
+}
+
+/*第四部分内容-----------------------------------------------------------------------------*/
+.content-four {
+	width: 100%;
+}
+.content-four img {
+	margin:30px 0px;
+}
+
+/*第五部分内容---------------------------------------------------------------------------*/
+.content-five {
+	width: 100%;
+	padding-bottom: 30px;
+}
+.content-five div {
+	float: left;
+	width: 16.6%;
+	height: 36px;
+	line-height: 36px;
+	margin-top:25px;
+	margin-bottom: 15px;
+}

@@ -1,0 +1,40 @@
+<?php
+$arr=[
+  'a','b','c',
+  35=>'test',
+  ''=>'aaa',
+  null=>'bbb',
+  46=>false,
+  'username'=>'king',
+  'age'=>12
+];
+// Array
+// (
+//     [0] => a
+//     [1] => b
+//     [2] => c
+//     [35] => test
+//     [username] => king
+//     [age] => 12
+// )
+// while(current($arr)){
+//   echo '当前指针所在位置的键名为：',key($arr),'<br/>';
+//   echo '当前指针所在位置的键值为：',current($arr),'<br/>';
+//   echo '<hr/>';
+//   next($arr);
+// }
+
+while(!is_null(key($arr))){
+   echo '当前指针所在位置的键名为：',key($arr),'<br/>';
+   echo '当前指针所在位置的键值为：',current($arr),'<br/>';
+   echo '<hr/>';
+   next($arr);
+}
+//将数组元素倒置输出
+echo '<hr/>';
+
+$filename='1.txt.php.html';
+$res=explode('.',$filename);
+print_r($res);
+$ext=end($res);
+echo $ext;

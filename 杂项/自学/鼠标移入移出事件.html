@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link id="lh" rel="stylesheet" type="text/css" href="css1.css" />
+		
+		
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#shubiao{
+				width: 500px;
+				height: 500px;
+				background-color: skyblue;
+			}
+			#xy{
+				height: 200px;
+				width: 200px;
+				background-color: darkviolet;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="shubiao" onmouseover="yiru()" onmouseout="yichu()">
+		<input type="button" value="背景1" onclick="beijing1()" />
+		<input type="button" value="背景2" onclick="beijing2()" />	
+		</div>
+		<input type="button" value="显示隐藏" onclick="xianyin()" />
+		<div id="xy">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+	var dv=document.getElementById("shubiao");
+	
+	function yiru()
+	{
+		dv.style.backgroundColor="red";
+	}
+	function yichu()
+	{
+		dv.style.backgroundColor="skyblue";
+	}
+	
+	
+	
+	function beijing1()
+	{
+		var bj=document.getElementById("lh");
+		bj.href='css1.css';
+	}
+	function beijing2()
+	{
+		var bj=document.getElementById("lh");
+		bj.href='css2.css';
+	}
+	
+	
+	function xianyin(){
+		var xxyy=document.getElementById("xy");
+		if(xxyy.style.display=="block"){
+			xxyy.style.display="none"
+		}
+		else{
+			xxyy.style.display="block"
+		}
+	}
+	</script>
+</html>

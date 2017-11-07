@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<input type="button" id="aa" value="全选" />
+		<input type="button" id="aa1" value="不选" />
+		<input type="button" id="aa2" value="反选" />
+		<div id="bb">
+		<input type="checkbox"/>
+		<input type="checkbox"/>
+		<input type="checkbox"/>
+		<input type="checkbox"/>
+		<input type="checkbox"/>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var quanxuan=document.getElementById("aa");
+		var buxuan=document.getElementById("aa1");
+		var fanxuan=document.getElementById("aa2");
+		var one=document.getElementById("bb");
+		var two=one.getElementsByTagName("input");
+		quanxuan.onclick=function(){
+			for(var i=0;i<two.length;i++)
+			{
+				two[i].checked=true;
+			}
+		}
+		buxuan.onclick=function(){
+			for(var i=0;i<two.length;i++)
+			{
+				two[i].checked=false;
+			}
+		}
+		fanxuan.onclick=function(){
+			for(var i=0;i<two.length;i++)
+			{
+				if(two[i].checked==true)
+				{
+					two[i].checked=false;
+				}
+				else
+				{
+					two[i].checked=true;
+				}
+			}
+		}
+	</script>
+</html>

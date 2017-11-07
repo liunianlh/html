@@ -1,0 +1,80 @@
+ul li{
+   list-style:none;
+}
+
+.mian_header{
+	width: 1200px;
+	   min-height: 160px;
+    width: 100%;
+	background-image: url(../images/b5.jpg);
+	background-size:cover;
+
+}
+
+.mian_count{
+	width: 1200px;
+	/*height:800px;*/
+}
+.mian_count>h2{
+	text-align: center;
+}
+.mian_count_left{
+	width: 600px;
+	margin-top: 60px;
+	float: left;
+}
+.mian_count_left>form>p{
+	font-size: 23px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.mian_count_left_input{
+	width: 550px;
+	height: 30px;
+}
+.mian_count_left_input1{
+	width: 550px;
+	height: 40px;
+}
+.mian_count_left_submit{
+	width: 120px;
+	height: 35px;
+	background-color: #F896A9;
+	margin-top: 20px;
+	margin-left: 433px;
+	color: white;
+}
+.mian_count_right{
+	width: 600px;
+	height: 400px;
+	margin-top: 60px;
+	margin-left: 620px;
+}
+.mian_count_right-span>span{
+	font-size: 18px;
+	color: #F896A9;
+}
+.mian_count_right-span2{
+	margin-top: 18px;
+		 text-indent:2em;
+}
+.mian_count_right-span3{
+margin-top: 18px;
+		 text-indent:2em;	
+}
+.mian_count_right-ul{
+	margin-top: 30px;
+}
+.mian_count_right-ul>ul{
+	float: left;
+	
+}
+.mian_count_right-ul2{
+margin-left: 45px;	
+}
+.mian_count_bottom{
+	width: 800px;
+	height: 360px;
+	border: 1px silver solid;
+	margin-bottom: 100px;
+}

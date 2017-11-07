@@ -1,0 +1,14 @@
+<?php
+header('content-type:text/html;charset=utf-8');
+$wenjian='user1.csv';
+$wenjian1=fopen($wenjian,'wb+');
+$date=[
+['id'=>1,'Name1'=>'ÁõºÕ','coures'=>'PHP1'],
+['id'=>2,'Name1'=>'È«ÀÖ','coures'=>'PHP2'],
+['id'=>3,'Name1'=>'Åí´¨','coures'=>'PHP3']
+];
+foreach($date as $val)
+{
+	fputcsv($wenjian1,$val,'-¡ª¡ª');
+}
+	fclose($wenjian1);

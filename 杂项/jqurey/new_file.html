@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<ul>
+			<li class="lei">1</li>
+			<li class="lei">2</li>
+			<li class="lei">3</li>
+			<li class="lei">4</li>
+			<li class="lei">5</li>
+			<li class="lei">6</li>
+		</ul>
+		<script src="js/jquery-1.12.4.js"></script>
+		<script>
+			$(function() {
+				var elements = $('li');
+				//			console.log(elements.length)
+				//测试元素个数
+
+				//			提取元素
+				
+				console.log(elements[1])
+				
+
+				console.log(elements.get(2))
+				console.log(elements.get(-2))
+
+
+				console.log(elements.eq(2))
+				console.log(elements.eq(-2))
+				//
+				
+				console.log(elements.first())
+				console.log(elements.last())
+				
+
+			})
+		</script>
+
+		<!--
+			、Jqurey提取元素
+			[index] 返回DOM元素
+			get([index])返回DOM元素或元素集合
+			eq(index)返回Jquery对象
+			-->
+	</body>
+
+</html>

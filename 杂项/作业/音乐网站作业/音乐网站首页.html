@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>音乐网站</title>
+<style>
+<!--
+body{
+	width:760px;
+	background-color:white;
+	margin:0 auto;
+	font-size:12px;
+	
+}
+*{
+	margin:0;
+	padding:0;
+}
+#header,#nav,#banner{
+	width:760px;
+	height:190px;
+	margin:0 auto;
+}
+.nav_img,.head_img{
+	float:left;
+}
+#nav{
+	height:40px;
+	margin-bottom:10px;
+}
+#banner{
+	height:60px;
+	margin-bottom:10px;
+}
+#act{
+	width:250px;
+	height:226px;
+	background-image:url(images/jmd_bottom.jpg);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	margin-bottom:10px;
+	float:left;	
+}
+#act h1{
+	background:url(images/jmd_top.jpg) no-repeat left center;
+	width:250px;
+	height:32px;
+	line-height:32px;
+	color:white;
+	font-size:12px;
+	text-align:center;
+}
+#act div{
+	width:250px;
+	height:188px;
+	background-image:url(images/jmd_bg.jpg);
+}
+#act div ul{
+	width:240px;
+	height:188px;
+	margin:0 auto;
+	color:white;
+	line-height:150%;
+	text-indent:45px;
+	word-spacing:1px;
+	scrollbar-face-color:#333;
+	scrollbar-3dlight-color:#999 /*������������ߵ���ɫ*/
+    scrollbar-highlight-color:#666; /*�������ĸ�����ɫ������Ӱ����*/
+    scrollbar-shadow-color:#333; /*�����������Ӱ����ɫ*/
+    scrollbar-track-color:#FFF; /*���������������ɫ*/
+    scrollbar-arrow-color:#999;
+	overflow:auto;
+}
+#act div ul li span{
+	color:#F60;
+}
+#video{
+	width:500px;
+	height:336px;
+	background:url(images/flv_bottom.jpg) no-repeat left bottom;
+	float:right;
+	margin-bottom:10px;
+}
+#video h1{
+	width:500px;
+	height:31px;
+	line-height:31px;
+	color:white;
+	font-size:12px;
+	text-align:center;
+	background:url(images/flv_top.jpg) no-repeat left center;
+}
+#video div{
+	width:auto;
+	height:289px;
+	background:url(images/flv_bg.jpg);
+	padding-left:40px;
+	padding-top:10px;
+}
+#video div span{
+	width:320px;
+	height:260px;
+	display:block;
+	float:left;
+}
+#video div ul{
+	padding-left:15px;
+	width:75px;
+	height:260px;
+	float:left;
+	line-height:0px;
+}
+#video div ul li img{
+	width:75px;
+	height:55px;
+	padding-top:3px;
+	padding-bottom:3px;
+	display:block;
+}
+#video div strong{
+	height:20px;
+	line-height:20px;
+	display:block;
+	clear:both;
+	font-weight:normal;
+	text-indent:20px;
+	color:white;
+}
+#ad{
+	width:250px;
+	height:100px;
+	margin-bottom:10px;
+	float:left;
+}
+#top{
+	width:250px;
+	height:340px;
+	margin-bottom:10px;
+	float:left;
+	background:url(images/jmd_bottom.jpg) no-repeat bottom;
+}
+#top h1{
+	width:250px;
+	height:32px;
+	line-height:32px;
+	color:white;
+	font-size:12px;
+	text-align:center;
+	background:url(images/jmd_top.jpg);
+}
+#top div#ta{
+	width:250px;
+	height:302px;
+	background:url(images/jmd_bg.jpg)
+}
+#top div#ta ul#sidebar{
+	width:215px;
+	height:20px;
+	line-height:20px;
+	margin:0 auto;
+	border-bottom:1px solid #5a5a5a;
+	padding-top:5px;
+}
+#top div#ta ul#sidebar li{
+	display:block;
+	border-top:1px solid #5a5a5a;
+	border-right:1px solid #5a5a5a;
+	border-left:1px solid #5a5a5a;
+	color:white;
+	list-style-type:none;
+	float:left;
+	margin-left:5px;
+	cursor:pointer;
+}
+#top div#ta ul#sidebar li a:hover{
+	background-color:#555;
+	display:block;
+}
+#top div#ta div#content{
+	width:250px;
+	height:250px;
+	color:white;
+	padding:10px;
+	padding-left:45px;
+	padding-right:5px;
+}
+#top div#ta div#content ul{
+
+	background-image:url(images/music.gif);
+	background-repeat:repeat-y;
+	background-position:right;
+	line-height:25px;
+	width:190px;
+}
+#top div#ta div#content ul li.one{
+	list-style-image:url(images/1.gif);
+	text-indent:5px;
+}
+#top div#ta div#content ul li.two{
+	list-style-image:url(images/2.gif);
+	text-indent:5px;
+}
+#top div#ta div#content ul li.three{
+	list-style-image:url(images/3.gif);
+	text-indent:5px;
+}
+#top div#ta div#content ul li.four{
+	list-style-image:url(images/4.gif);
+	text-indent:5px;
+}
+#top div#ta div#content ul li.five{
+	list-style-image:url(images/5.gif);
+	text-indent:5px;
+}
+#top div#ta div#content ul li.six{
+	list-style-image:url(images/6.gif);
+	text-indent:5px;
+}
+#top div#ta div#content ul li.seven{
+	list-style-image:url(images/7.gif);
+	text-indent:5px;
+}
+#top div#ta div#content ul li.eight{
+	list-style-image:url(images/8.gif);
+	text-indent:5px;
+}
+#top div#ta div#content ul li.nine{
+	list-style-image:url(images/9.gif);
+	text-indent:5px;
+}
+#top div#ta div#content ul li.ten{
+	list-style-image:url(images/10.gif);
+	text-indent:5px;
+}
+#commend{
+	width:500px;
+	height:119px;
+	float:right;
+	background:url(images/flv_bottom.jpg) no-repeat left bottom;
+	margin-bottom:10px;
+}
+#commend h1{
+	width:500px;
+	height:31px;
+	line-height:31px;
+	color:white;
+	font-size:12px;
+	text-align:center;
+	background:url(images/flv_top.jpg) no-repeat left center;
+}
+#commend div{
+	width:auto;
+	height:82px;
+	background:url(images/flv_bg.jpg);
+	padding-left:20px;
+}
+#commend div img{
+	display:block;
+	float:left;
+	padding-top:12px;
+	padding-left:10px;
+	border-style:none;
+}
+#compere{
+	width:500px;
+	height:140px;
+	background:url(images/flv_bottom.jpg) no-repeat left bottom;
+	float:right;
+	margin-bottom:10px;
+}
+#compere h1{
+	width:500px;
+	height:31px;
+	line-height:31px;
+	color:white;
+	font-size:12px;
+	text-align:center;
+	background:url(images/flv_top.jpg) no-repeat left center;
+}
+#compere div{
+	width:auto;
+	height:103px;
+	background:url(images/flv_bg.jpg);
+	padding-left:40px;
+}
+#compere div dl{
+	padding-top:10px;
+	float:left;	
+}
+#compere div dl dt{
+	float:left;
+}
+#compere div dl dt img{
+	display:block;
+	margin-right:5px;
+}
+#compere div dl dd{
+	color:white;
+	line-height:15px;
+	width:210px;
+}
+#partner{
+	width:500px;
+	height:60px;
+	float:right;
+	margin-bottom:10px;
+}
+#footer{
+	clear:both;
+	width:760px;
+	height:120px;
+	background:url(images/footer.gif) no-repeat left center;
+}
+#footer ul{
+	list-style:none;
+	font-size:12px;
+	text-align:center;
+	padding-top:15px;
+}
+#footer ul li{
+	display:inline;
+}
+#footer ul a{
+	color:yellow;
+	text-decoration:none;
+	margin-right:8px;
+}
+-->
+</style>
+</head>
+<body >
+<div id="header">
+<img class="head_img" src="images/top_02.jpg" />
+<img class="head_img" src="images/top_03.jpg" />
+<img class="head_img" src="images/top_04.jpg" />
+<img class="head_img" src="images/top_05.jpg" />
+<img class="head_img" src="images/top_06.jpg" />
+<img class="head_img" src="images/top_07.jpg" />
+<img class="head_img" src="images/top_08.jpg" />
+<img class="head_img" src="images/top_09.jpg" />
+<img class="head_img" src="images/top_10.jpg" />
+<img class="head_img" src="images/top_11.jpg" />
+</div>
+<div id="nav">
+<img class="nav_img" src="images/nav_03.gif" />
+<img class="nav_img" src="images/nav_04.gif" />
+<img class="nav_img" src="images/nav_05.gif" />
+<img class="nav_img" src="images/nav_06.gif" />
+<img class="nav_img" src="images/nav_07.gif" />
+<img class="nav_img" src="images/nav_08.gif" />
+<img class="nav_img" src="images/nav_09.gif" />
+</div>
+<div id="banner">
+<img src="images/760x60.gif" />
+</div>
+<div id="act">
+<h1>[v]��Ŀ��</h1>
+<div>
+ <ul>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:o00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+      <li><span>00:00-00:30</span>��ƵMore</li>
+    </ul>
+</div>
+</div>
+<div id="video">
+<h1>[v]����̨</h1>
+<div>
+<span>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="320" height="260" id="FLVPlayer"><param name="movie" value="video.swf?volume=30&amp;autostart=false&amp;lightcolor=0xCC9900&amp;backcolor=0x000000&amp;frontcolor=0xCCCCCC&amp;showdigits=true&amp;repeat=false&amp;enablejs=true&amp;file=1.flv"><param name="quality" value="high"><param name="wmode" value="transparent"><embed src="video.swf?volume=30&amp;autostart=false&amp;lightcolor=0xCC9900&amp;backcolor=0x000000&amp;frontcolor=0xCCCCCC&amp;repeat=false&amp;enablejs=true&amp;file=3.flv" quality="high" type="application/x-shockwave-flash" width="320" height="240" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="transparent"></object>
+</span>
+<ul>
+ <li><img src="images/flvplay-1.jpg" width="75" height="56" alt="1" /></li>
+      <li><img src="images/flvplay-4.jpg" width="120" height="90" alt="4" /></li>
+      <li><img src="images/flvplay-5.gif" width="75" height="55" alt="5" /></li>
+      <li><img src="images/channelV.gif" width="312" height="239" alt="v" /></li>
+</ul>
+<strong>������޷��ۿ������������˴����ز�����</strong>
+</div>
+</div>
+<div id="ad">
+<img src="images/250x100_1.gif" width="250" height="100" alt="ad" />
+</div>
+<div id="top">
+<h1>[v]����쮰�</h1>
+<div id="ta">
+<ul id="sidebar">
+<li><a>[V]���ݰ�</a></li>
+<li><a>[V]��۰�</a></li>
+</ul>
+<div id="content">
+<ul>
+        <li class="one">�¸ҵ���</li>
+        <li class="two">�¸ҵ���</li>
+        <li class="three">�¸ҵ���</li>
+        <li class="four">�¸ҵ���</li>
+        <li class="five">�¸ҵ���</li>
+        <li class="six">�¸ҵ���</li>
+        <li class="seven">�¸ҵ���</li>
+        <li class="eight">�¸ҵ���</li>
+        <li class="nine">�¸ҵ���</li>
+        <li class="ten">�¸ҵ���</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="commend">
+<h1>[V]����쮰�</h1>
+<div>
+ <a href="#"><img src="images/z1.gif" alt="1" /></a>
+    <a href="#"><img src="images/z2.gif" alt="2" /></a>
+    <a href="#"><img src="images/z3.gif" alt="3" /></a>
+    <a href="#"><img src="images/z4.gif" alt="4" /></a>
+    <a href="#"><img src="images/z5.gif" alt="5" /></a>
+</div>
+</div>
+<div id="compere">
+<h1>[V]����������</h1>
+<div>
+<dl>
+  <dt><img src="images/z6.gif" alt="6" /></dt>
+<dd><strong>�</strong></dd>
+         <dd>Ӣ����:Nic Li</dd>
+         <dd>����:8��28��</dd>
+         <dd>����:��Ů��</dd>
+         <dd>���:180cm</dd>
+         <dd><a href="#">��Ŀռ�</a></dd>
+</dl>
+<dl>
+   <dt><img src="images/z7.gif" alt="7" /></dt>
+ <dd><strong>������</strong></dd>
+         <dd>Ӣ����:Tony Ding</dd>         
+         <dd>����:������</dd>
+         <dd>���:178cm</dd>
+         <dd>����:68kg</dd>
+         <dd><a href="#">������Ŀռ�</a></dd>         
+</dl>
+</div>
+</div>
+<div id="partner">
+<img src="images/friendlogo.gif" width="500" height="60" alt="part" />
+</div>
+<div id="footer">
+<ul>
+<li><a href="#">���ɷ���</a></li>
+<li><a href="#">����Channel[V]</a></li>
+<li><a href="#">��ϵ����</a></li>
+</ul>
+</div>
+</body>
+</html>

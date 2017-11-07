@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> 
+	
+<head>
+	<meta charset="UTF-8">
+	<title>marquee用法</title>
+<body> 
+<marquee direction="right" bgcolor="#009999" height="30px"  scrollamount="5">
+欢迎访问本网站！！
+</marquee>
+<br>
+<br>
+<marquee direction="down" bgcolor="#CCCCCC" height="200px" width="200px"  scrollamount="3"  align="center" onMouseOver="this.stop()" onMouseOut="this.start()">
+<ul style="line-height:2">
+<li><a href="http://www.baidu.com">浏览百度信息</a></li>
+<li><a href="http://www.163.com">浏览网易信息</a><br></li>
+<li><a href="http://www.sina.com">浏览新浪信息</a></li>
+</ul>
+</marquee>
+</body> 
+</html>
+<!--
+	marquee标签，设置列表滚动
+	direction 表示滚动的方向，值可以是left，right，up，down，默认为left，表示向左滚动。
+	behavior 表示滚动的方式，值可以是scroll（连续滚动）slide（滑动一次）alternate（来回滚动）。
+	loop 表示循环的次数，值是正整数，默认为无限循环(等于-1也表示无限循环)。
+	scrollamount 表示运动速度，值是正整数，默认为6。每次滚动时移动的长度，以像素为单位。
+	onMouseOver="this.stop()" onMouseOut="this.start()鼠标停留时停止滑动。
+-->

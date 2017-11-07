@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#se{
+				width: 300px;
+				height: 300px;
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="变黄" onclick="bianse('yellow');" />
+		<input type="button" value="变黑" onclick="bianse('black');"/>
+		<input type="button" value="变蓝" onclick="bianse('blue');"/>
+		<input type="button" value="变宽" onclick="gaibian('width','600px');"/>
+		<input type="button" value="变高" onclick="gaibian('height','600px');"/>
+		<!--除了变量和参数以外，其余的加单引号-->
+		
+		<div id="se"></div>
+	</body>
+	<script type="text/javascript">
+		function bianse(color){
+			var bx=document.getElementById("se");
+			se.style.background=color;
+			//第一种改变属性的方式用·
+		}
+		function gaibian(name,value){
+			var bx=document.getElementById("se");
+			se.style[name]=value;
+			//第二种改变属性的方式用[]
+			//修改的属性不固定的时候用第二种
+		}
+	</script>
+</html>

@@ -1,0 +1,301 @@
+/*公共样式*/
+
+* {
+	margin: 0 auto;
+}
+
+
+/*清除浮动*/
+
+.clearbox:after {
+	content: "";
+	line-height: 0px;
+	height: 0px;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+
+/*--------------------------------头部--------------------------------*/
+
+
+/*头部*/
+
+#header {
+	width: 100%;
+	background: #9A1637;
+	border-bottom: 10px solid #E6E3E7;
+}
+
+.header {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.header_left {
+	width: 40%;
+	float: left;
+	/*padding: 15px 20px;*/
+	padding: 25px 0px;
+	text-align: center;
+}
+
+.header_left img {
+	width: 50%;
+}
+
+.header_right {
+	width: 60%;
+	float: left;
+}
+
+.header_right a {
+	font-size: 1rem;
+	width: 33.3%;
+	color: #FFF;
+	line-height: 52px;
+	float: left;
+	background: red;
+	text-align: center;
+	text-decoration: none;
+}
+
+.header_right a:nth-child(2n-1) {
+	background: #BA0D37;
+}
+
+header_right a:nth-child(2n) {
+	background: #B20F37;
+}
+
+
+/*------------------------------------中部----------------------------------*/
+
+
+/*内容区域*/
+
+#content {
+	width: 67%;
+}
+
+.content_one {
+	margin-top: 5px;
+}
+
+.content_two {
+	font-size: 4rem;
+}
+
+.content_three {
+	margin-top: 10px;
+	font-weight: bolder;
+}
+
+.content_four {
+	margin-top: 10px;
+}
+
+.content_four a {
+	color: #9A1637;
+}
+
+.content_five {
+	width: 50px;
+	height: 5px;
+	background: #E6E3E7;
+	margin-top: 20px;
+}
+
+.content_six {
+	list-style-type: none;
+	padding: 0px;
+}
+
+.content_six li {
+	margin: 20px 10px 20px 0px;
+	width: 48%;
+	float: left;
+}
+
+.content_six li p {
+	padding: 15px 0px;
+	font-size: 0.9rem;
+}
+
+.content_six li a {
+	width: 240px;
+	height: 35px;
+	line-height: 35px;
+	background: #E6E3E7;
+	display: block;
+	margin: 0;
+	text-align: center;
+	border-radius: 25px;
+	font-size: 0.9rem;
+	color: #000;
+	text-decoration: none;
+	border: 2px solid #fff;
+	box-shadow: 2px 2px 0px 0px #E6E3E7, -2px -2px 0px 0px #E6E3E7, 2px -2px 0px 0px #E6E3E7, -2px 2px 0px 0px #E6E3E7;
+}
+
+
+/*---------------------------中部下------------------------------*/
+
+.content_bottom {
+	border: 5px #E6E3E7 solid;
+}
+
+.content_bottom>h4 {
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+
+.content_bottom>p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.content_bottom>p>img {
+	width: 110px;
+	height: 110px;
+	float: right;
+}
+
+.content_bottom_p2 {
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+
+/*------------------------底部----------------------------*/
+
+#bottom {
+	width: 100%;
+	height: 100%;
+	color: white;
+	background: #BA0D37;
+	/*	border: 8px solid #E6E3E7;*/
+	text-align: center;
+	margin-top: 20px;
+}
+
+#bottom>h2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.bottom-radio {
+	width: 200px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 25px;
+	background: #B11733;
+	border: 2px solid #D1413B;
+	box-shadow: 1px 1px 0px 0px #2E2E2E, -1px -1px 0px 0px #2E2E2E, 1px -1px 0px 0px #2E2E2E, -1px 1px 0px 0px #2E2E2E;
+}
+
+.bottom_three {
+	margin-top: 20px;
+	width: 52%;
+	/*background: salmon;*/
+	height: 20px;
+	/*	margin-bottom: 20px;*/
+}
+
+.bottom_three_left {
+	width: 50%;
+	float: left;
+}
+
+.bottom_three_right {
+	width: 50%;
+	float: left;
+}
+
+.bottom_si {
+	width: 40%;
+	height: 5px;
+	background: #D1413B;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.bottom_wu {
+	width: 40%;
+	position: relative;
+}
+
+.bottom_wu>div {
+	width: 25%;
+	float: left;
+}
+
+.bottom_wu>div>span {
+	line-height: 35px;
+	position: absolute;
+}
+
+
+/*适配页面*/
+
+@media (max-width:770px) {
+	/*    ---------------头部适配----------------------*/
+	.header {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.header_left {
+		width: 100%;
+		text-align: center;
+		padding: 5px 0px;
+	}
+	.header_left img {
+		width: 200px;
+	}
+	.header_right {
+		width: 100%;
+	}
+	/*-------------中部适配------------------*/
+	.content_two {
+		font-size: 1.5rem;
+	}
+	.content_six li {
+		margin: 20px 0px 20px 0px;
+		width: 100%;
+		float: left;
+	}
+	#content {
+		width: 80%;
+	}
+	/*------------------底部适配--------------------------*/
+	.bottom_three_left {
+		width: 150%;
+		margin-left: -50px;
+		
+	}
+	.bottom_three_right {
+		width: 100%;
+		margin-top: 20px;
+	}
+	.bottom_si{
+		margin-top: 100px;
+		width: 80%;
+	}
+/*
+	.bottom_wu div:nth-child(2n){
+	}
+	*/
+	.bottom_wu>div {
+	width: 50%;
+	float: left;		
+		}
+
+.bottom_wu>div>span {
+	line-height: 35px;
+	position: absolute;
+}
+
+}

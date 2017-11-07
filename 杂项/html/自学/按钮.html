@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#tab {
+				margin:50px auto;
+				height: 500px;
+				width: 340px;
+				background: #E9E9E7;
+			}
+			
+			#tab ul li{
+				display: inline-block;
+				margin: 10px;
+				background: #4C4C4A;
+				height: 90px;
+				width: 90px;
+			}
+			#tab ul li h2{
+				height: 50px;
+				width: 100%;
+				color: white;
+				text-align: center;
+				font-size: 35px;
+				line-height: 50px;
+			}
+			#tab ul li p{
+				height: 40px;
+				width: 100%;
+				color: white;
+				text-align: center;
+				font-size: 20px;
+				line-height:40px;
+			}
+			#tab .text{
+				border: 1px black solid;
+			}
+			#tab ul .active{
+				background-color: yellow;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="tab" class="calender">
+			<ul>
+				<li class="active">
+					<h2>1</h2>
+					<p>JAN</p>
+				</li>
+				<li>
+					<h2>2</h2>
+					<p>JAN</p>
+				</li>
+				<li>
+					<h2>3</h2>
+					<p>JAN</p>
+				</li>
+				<li>
+					<h2>4</h2>
+					<p>JAN</p>
+				</li>
+				<li>
+					<h2>5</h2>
+					<p>JAN</p>
+				</li>
+				<li>
+					<h2>6</h2>
+					<p>JAN</p>
+				</li>
+				<li>
+					<h2>7</h2>
+					<p>JAN</p>
+				</li>
+				<li>
+					<h2>8</h2>
+					<p>JAN</p>
+				</li>
+				<li>
+					<h2>9</h2>
+					<p>JAN</p>
+				</li>
+			</ul>
+			<div class="text">
+				<h2>1月活动</h2>
+				<p>快过年了，大家可以商量着去哪玩吧~~</p>
+			</div>
+		</div>
+	</body>
+		<script>
+		var oDIV=document.getElementById("tab");
+		var aLi=oDIV.getElementsByTagName("li");
+		var oTxt=oDIV.getElementsByTagName("div");
+		for (var i=0; i<=aLi.length;i++)
+		{
+		
+
+			aLi[i].onclick = function ()
+			{
+				for (var i=0;i<=aLi.length;i++)
+				{
+					aLi[i].className="";
+				}
+				this.className='active';
+
+			};
+		};
+//		oDIV.onclick=function(ev){
+//			var ev=window.event;
+//			var targe=ev.target;
+//			if(targe.nodeName.toLowerCase()=="li")
+//			{
+//				targe.style.background="red";
+//			}
+//		}
+//		oDIV.onclick=function(ev){
+//			var ev=ev;
+//			var targe=ev.target;
+//			if(targe.nodeName.toLowerCase()=="li"){
+//				targe.style.background=";"
+//			}
+//		}
+		</script>
+</html>

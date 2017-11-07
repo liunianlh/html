@@ -1,0 +1,132 @@
+<!--<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1 {
+				width: 150px;
+				height: 200px;
+				background: green;
+				position: absolute;
+				left: -150px;
+			}
+			
+			#div1 span {
+				position: absolute;
+				width: 20px;
+				height: 60px;
+				line-height: 20px;
+				background: blueviolet;
+				right: -20px;
+				top: 70px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="div1">
+			<span>分享到</span>
+		</div>
+	</body>
+	<script>
+		var oDiv = document.getElementById("div1");
+
+		oDIV.onmouseover = function() {
+			startMove();
+		};
+
+		var timer = null;
+
+		function startMovr() {
+			var oDiv = document.getElementById("div1");
+			clearInterval(timer);
+			timer = setInterval(function() {
+					if(oDiv.offsetLeft == 0) {
+						clearInterval(timer);
+					} else {
+						oDIV.style.left = oDIV.offsetLeft + 10 + 'px';
+					}
+				};
+			}
+	</script>
+
+</html>
+-->
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>无标题文档</title>
+	<style>
+		#div1 {
+			width: 150px;
+			height: 200px;
+			background: green;
+			position: absolute;
+			left: -150px;
+		}
+		
+		#div1 span {
+			position: absolute;
+			width: 20px;
+			height: 60px;
+			line-height: 20px;
+			background: blue;
+			right: -20px;
+			top: 70px;
+			cursor:pointer;
+		}
+	</style>
+	<script>
+		window.onload = function() {
+			var oDiv = document.getElementById('div1');
+
+			oDiv.onmouseover = function() {
+				startMove(0);
+				//里面传递的参数是判断移入移出的位置
+			};
+			oDiv.onmouseout = function() {
+				startMove(-150);
+			};
+		};
+
+		var timer = null;
+		//将定时器清空
+		function startMove(iTarget) {
+			var oDiv = document.getElementById('div1');
+
+			clearInterval(timer);
+			timer = setInterval(function() {
+				var speed = 0;
+				//定义div移入移出的速度
+				if(oDiv.offsetLeft > iTarget) {
+					speed = -10;
+				} else {
+					speed = 10;
+				}
+
+				if(oDiv.offsetLeft == iTarget) {
+					clearInterval(timer);
+				} else {
+					oDiv.style.left = oDiv.offsetLeft + speed + 'px';
+					//改变div的left，从而使它移动
+				}
+			}, 30);
+		}
+	</script>
+</head>
+
+<body>
+	<div id="div1">
+		<span>分享到</span>
+	</div>
+</body>
+
+</html>
