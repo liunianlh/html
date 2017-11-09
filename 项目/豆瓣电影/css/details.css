@@ -1,0 +1,29 @@
+.main_count{
+	margin-top: 50px;
+	width: 100%;
+}
+.main_count>img{
+	overflow: hidden;
+}
+.main_left{
+	width: 20%;
+	float: left;
+}
+.main_right{
+	width: 78%;
+	margin-left: 20px;
+float: right;
+}
+.main_right>div{
+	margin-top: 15px;
+}
+@media (max-width:772px){
+	.main_left{
+		margin: 0 auto;
+		float: none;
+		}
+		.main_right{
+			margin: 0 auto;
+			float: none;
+			}
+}

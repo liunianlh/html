@@ -1,0 +1,104 @@
+.header{
+
+	background-color:#384555;
+
+}
+.header>a{
+		font-size: 25px;
+		color: white;
+		text-decoration: none;
+		line-height: 50px;
+}
+
+
+
+/*搜索行*/
+.header2{
+	background:#EFF3F6 ;
+
+}
+.header2_shang{
+	
+	margin-top: 60px;
+	margin-bottom: 60px;
+		
+}
+.header2_count>div{
+	float: left;
+}
+.header2_left>a{
+	font-size: 50px;
+	 color: #27a;
+    text-decoration: none;
+}
+.header2_left{	
+	margin-right: 50px;
+	line-height: 40px;
+}
+.header2_count{
+	margin-left: 10%;
+}
+.header2_right{
+	
+	width: 56%;
+}
+
+.sousuo>button{
+	
+	 background: #27a;
+	 color: white;
+}
+
+
+
+/*导航栏*/
+
+
+.xiao{
+	float: right;
+}
+
+
+.daohang{
+	background-color: #EFF3F6;
+	border-top:1px solid #e1e1e1 ;
+}
+.menu .navbar{
+	margin-bottom: 0px;
+	border: 0px;
+}
+.menu .nav>li>a{
+	color: #505050;
+}
+.menu .nav>li>a:hover{
+	background: #fff;
+	color: #27a;
+}
+.menu_active{
+	border-bottom:2px solid #27a;
+}
+
+.menu .icon-bar{
+	background-color:red;
+	height: 3.5px;
+}
+.navbar-toggle{
+	float: none;
+}
+
+
+
+
+
+@media (max-width:772px){
+	.header2_left{
+		display: none;
+	}
+	.header2_right{
+	
+	width: 100%;
+		}
+	.header2_count{
+	margin-left: 0%;
+}
+}
