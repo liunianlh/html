@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 
 	<head>
 		<meta charset="utf-8" />
@@ -9,8 +9,11 @@
 		<link rel="stylesheet" href="css/header.css" />
 		<link rel="stylesheet" href="css/index_main.css" />
 		<link rel="stylesheet" href="css/footer.css" />
+                  <script src="angular-1.6.6/angular.js"></script>
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+                
+            
 
 	</head>
 
@@ -82,147 +85,16 @@
 		</header>
 
 		<main>
-			<div class="container main_count">
+                    <div class="container main_count" ng-controller="listControler">
 				<div class="main_remen">热门影片</div>
 
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail divv">
-							<img src="img/book.jpg" alt="...">
-							<div class="caption name1">
-								<p>乘风破浪(2017)</p>
-								<p>类型:喜剧</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail divv">
-							<img src="img/book.jpg" alt="...">
-							<div class="caption name1">
-								<p>乘风破浪(2017)</p>
-								<p>类型:喜剧</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail divv">
-							<img src="img/book.jpg" alt="...">
-							<div class="caption name1">
-								<p>乘风破浪(2017)</p>
-								<p>类型:喜剧</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail divv">
-							<img src="img/book.jpg" alt="...">
-							<div class="caption name1">
-								<p>乘风破浪(2017)</p>
-								<p>类型:喜剧</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail divv">
-							<img src="img/book.jpg" alt="...">
-							<div class="caption name1">
-								<p>乘风破浪(2017)</p>
-								<p>类型:喜剧</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail divv">
-							<img src="img/book.jpg" alt="...">
-							<div class="caption name1">
-								<p>乘风破浪(2017)</p>
-								<p>类型:喜剧</p>
-							</div>
-						</div>
-					</div>
-				</div>
+                                <image-list ng-repeat="v in data" for-image="{{v.image}}" for-name="{{v.name}}" for-year="{{v.year}}" >
+                                    
+                                </image-list>
 
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail divv">
-							<img src="img/book.jpg" alt="...">
-							<div class="caption name1">
-								<p>乘风破浪(2017)</p>
-								<p>类型:喜剧</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail divv">
-							<img src="img/book.jpg" alt="...">
-							<div class="caption name1">
-								<p>乘风破浪(2017)</p>
-								<p>类型:喜剧</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail divv">
-							<img src="img/book.jpg" alt="...">
-							<div class="caption name1">
-								<p>乘风破浪(2017)</p>
-								<p>类型:喜剧</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail divv">
-							<img src="img/book.jpg" alt="...">
-							<div class="caption name1">
-								<p>乘风破浪(2017)</p>
-								<p>类型:喜剧</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail divv">
-							<img src="img/book.jpg" alt="...">
-							<div class="caption name1">
-								<p>乘风破浪(2017)</p>
-								<p>类型:喜剧</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail divv">
-							<img src="img/book.jpg" alt="...">
-							<div class="caption name1">
-								<p>乘风破浪(2017)</p>
-								<p>类型:喜剧</p>
-							</div>
-						</div>
-					</div>
-				</div>
+                                
+                                
+				
 			</div>
 
 			<!--分页-->
@@ -260,3 +132,4 @@
 	</body>
 
 </html>
+<script src="js/app.js"></script>
