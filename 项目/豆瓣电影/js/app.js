@@ -1,11 +1,11 @@
 //模块化
 
-var app=angular.module("myApp",[]);
+var app=angular.module("myApp",["ui.router"]);
 app.controller("listControler",["$scope","$http",function($scope,$http){
         $scope.data="";
         $http({
             menthod:"get",
-            url:"listImage.php"
+            url:"php/listImage.php"
             
         }).then(
                 function(data){

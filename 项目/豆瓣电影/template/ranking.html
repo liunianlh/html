@@ -1,0 +1,17 @@
+<div class="container main_count">
+    <div class="main_remen top">影片排行榜</div>
+    
+    <div class="main_remen container main_count_two">
+        <span>影片类型：</span> 
+        <a href="">喜剧</a>&nbsp&nbsp
+        <a href="">动作</a>&nbsp&nbsp
+        <a href="">爱情</a>&nbsp&nbsp
+        <a href="">恐怖</a>&nbsp&nbsp
+        <a href="">科幻</a>&nbsp&nbsp
+        <a href="">犯罪</a>&nbsp&nbsp
+        <a href="">冒险</a>&nbsp&nbsp
+        <a href="">惊悚</a>
+    </div>
+    <image-list ng-repeat="v in data" for-image="{{v.image}}" for-name="{{v.name}}" for-year="{{v.year}}" ui-sref="info({id:v.id})" >
+    </image-list>		
+</div>

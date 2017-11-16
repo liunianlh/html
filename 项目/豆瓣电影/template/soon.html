@@ -1,0 +1,6 @@
+<div class="container main_count">
+    <div class="main_remen top">即将上映的影片</div>
+
+    <image-list ng-repeat="v in data" for-image="{{v.image}}" for-name="{{v.name}}" for-year="{{v.year}}" ui-sref="info({id:v.id})" >
+    </image-list>		
+</div>
