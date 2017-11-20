@@ -1,0 +1,144 @@
+.content {
+	margin-top: 24px;
+	margin-bottom: 88px;
+}
+
+.content .content_one div img {
+	width: 100%;
+	height: 169px;
+}
+
+.content .content_one h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: PingFangSC-Medium;
+	font-size: 24px;
+	color: #333333;
+	letter-spacing: 0;
+}
+
+.content .content_one h3 span {
+	color: rgba(21, 21, 21, 0.60);
+	line-height: 33px;
+}
+
+.content .content_one p {
+	margin-top: 8px;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #333333;
+	letter-spacing: 0;
+}
+
+.content .content_one p>span {
+	color: #0060ff;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: bold;
+}
+
+.content .content_one>div>span {
+	margin-top: 8px;
+	display: inline-block;
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: #333333;
+	letter-spacing: 0;
+}
+
+.content_two {
+	margin-top: 40px;
+}
+
+.biaoti {
+	line-height: 30px;
+}
+
+.biaoti div {
+	float: left;
+	width: 2px;
+	height: 30px;
+	background-color: #258DCD;
+}
+
+.biaoti span {
+	color: #333333;
+	font-size: 2.2rem;
+	margin-left: 8px;
+}
+
+.pinglun {
+	margin-top: 16px;
+}
+
+.pinglun_biaoti {
+	margin-bottom: 16px;
+}
+
+.pinglun_biaoti img {
+	width: 22px;
+	height: 22px;
+}
+
+.pinglun_biaoti>span {
+	font-family: PingFangSC-Medium;
+	font-size: 16px;
+	color: #333333;
+	letter-spacing: 1.33px;
+	vertical-align: middle;
+	margin-left: 8px;
+	display: inline-block;
+}
+
+.pinglun_one>p {
+	margin-top: 8px;
+	margin-left: 30px;
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: #333333;
+	letter-spacing: 1px;
+}
+
+.pinglun_one>span {
+	margin-top: 16px;
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: rgba(51, 51, 51, 0.60);
+	letter-spacing: 1px;
+}
+
+.wenben textarea {
+	margin-top: 24px;
+	width: 100%;
+	height: 189px;
+	outline: none;
+	resize: none;
+	border-radius: 6px;
+	box-shadow: 0 1px 14px 0 inset;
+}
+
+.wenben a {
+	text-align: center;
+	width: 80px;
+	line-height: 38px;
+	margin-top: 16px;
+	background-color: #258DCD;
+	border-radius: 6px;
+	border: 0px;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	text-decoration: none;
+}
+/*小屏时图片占一半*/
+@media (max-width: 1200px) {
+	.content .content_one div img {
+		width: 50%;
+		height: 300px;
+	}
+}
+
+.pinglun>div{
+	border: 1px gainsboro solid;
+}

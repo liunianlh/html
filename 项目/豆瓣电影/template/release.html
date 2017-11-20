@@ -1,0 +1,71 @@
+<div class="container content clearfix">
+	<div class="content-left pull-left">
+		<a href="javascript:void(0)" id="a_file">+</a>
+		<form action="" method="post">
+			<input type="file" id="file" value="" style="display: none;" />
+		</form>
+	</div>
+	<div class="content-right pull-right">
+		<div class="">
+			<p>影片名</p>
+			<input ng-model="name" type="text" class="input" placeholder="   请输入影片名" />
+		</div>
+		<div>
+			<p>主演</p>
+			<input ng-model="actor" type="text" class="input" placeholder="   请输入主演" />
+		</div>
+		<div>
+			<p>发布日期:</p>
+			<input ng-model="date" type="text" class="input" placeholder="   请输入发布的年份" />
+		</div>
+		<div>
+			<p>分类</p>
+			<select ng-model="type" name="请选择类型" class="input">
+				<option value="">   请选择类型</option>
+				<option value="爱情">爱情</option>
+				<option value="喜剧">喜剧</option>
+				<option value="动作">动作</option>
+				<option value="剧情">剧情</option>
+				<option value="科幻">科幻</option>
+				<option value="恐怖">恐怖</option>	
+			</select>
+		</div>
+		<!--<div>
+						<p style="display: inline-block;">是否热门:</p>
+						是<input type="radio" checked name="remen" value="yes" /> 否
+						<input type="radio" name="remen" value="not" />
+					</div>-->
+		<div>
+			<p>是否热门</p>
+			<select ng-model="hot" class="input">
+				<option value="">   请选择是否热门</option>
+				<option value="1">是热门</option>
+				<option value="2">不是热门</option>
+			</select>
+		</div>
+		<!--<div>
+						<p style="display: inline-block;">是否上映:</p>
+						是<input type="radio" checked name="shangying" value="yes" /> 否
+						<input type="radio" name="shangying" value="not" />
+					</div>-->
+		<div>
+			<p>是否上映</p>
+			<select ng-model="release" class="input">
+				<option value="">   请选择上映类型</option>
+				<option value="1">即将上映</option>
+				<option value="2">上映中</option>
+			</select>
+		</div>
+		<div>
+			<p>评分:</p>
+			<input ng-model="score" type="text" class="input" placeholder="   请输入评分(如：9.7)" />
+		</div>
+		<div>
+			<p>简介</p>
+			<textarea ng-model="about" placeholder="   请输出简介" class="input"></textarea>
+		</div>
+		<div>
+			<input class="button" type="button" ng-click="fabu()" value="发布" />
+		</div>
+	</div>
+</div>

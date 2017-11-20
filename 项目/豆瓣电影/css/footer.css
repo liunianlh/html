@@ -1,8 +1,9 @@
-/*.footer_count{
-
-
-	text-align: center;
-	background-color: red;
-	
-	
-}*/
+.navber-fixed-bottom>p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px
+}
+.navber-fixed-bottom{
+    height: 50px;
+    background-color: silver;
+}

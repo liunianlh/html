@@ -1,0 +1,41 @@
+<div class="container ">
+    <div class="main_count clear">
+
+        <div class="main_left">
+            <img src="{{data.image}}" />
+        </div>
+
+        <div class="main_right">
+            <div>
+                <span style="font-size: 20px;"><p><b>{{data.name}}</b>（{{data.year}}）</p></span>
+            </div>
+            <br />
+            <div>
+                <p>类型：{{data.type}}</p>
+            </div>
+            <br />
+            <div>
+                <p>主演：{{data.performer}} </p>
+            </div>
+            <div style="height:150px; ">
+                <p style=" text-indent:2em; letter-spacing:3px;font-size:18px;">的刚入宫面上覆盖阿甘afra我刚入宫面上入宫阿甘afra我刚入宫面上覆盖阿甘afrafraid仍无法仍无法废物飞</p>
+            </div> 			
+        </div>
+
+    </div>
+    <div class="main_count1">
+        热门影评
+    </div>
+    <div class="main_count2" id="app"  ng-controller="infoComment" >
+       <in-fo ng-repeat="v in date" for-content="{{v.content}}" for-date="{{v.add_time}}">
+	</in-fo>
+        
+    </div>
+
+    <div class="main_count3">
+        <textarea ng-model="content"></textarea>
+        <button type="button" class="btn btn-default anniu" ng-click="pinglun()">评论</button>
+    </div>
+
+</div>
+

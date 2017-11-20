@@ -1,0 +1,8 @@
+.type{
+	margin-top: 24px;
+}
+
+.type>a{
+	text-decoration: none;
+	margin-left: 10px;
+}

@@ -1,23 +1,11 @@
 //模块化
 
 var app=angular.module("myApp",["ui.router"]);
-app.controller("listControler",["$scope","$http",function($scope,$http){
-        $scope.data="";
-        $http({
-            menthod:"get",
-            url:"php/listImage.php"
-            
-        }).then(
-                function(data){
-                    $scope.data=data.data;
-                });
-}]);
-
 
 
 
 //自定义指令
-app.directive("imageList",[function(){
+app.directive("renMen",[function(){
     return{
             restrict:"EAC",
             templateUrl:"template/imageList.html",
@@ -25,7 +13,8 @@ app.directive("imageList",[function(){
             scope:{
                 image:"@forImage",
                 name:"@forName",
-                year:"@forYear"
+                year:"@forYear",
+                type:"@forType"
             },
             controller:function($scope){
                 $scope.getTitle=function(){
