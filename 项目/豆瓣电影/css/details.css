@@ -94,7 +94,16 @@ float: right;
 	margin-bottom: 200px;
 }
 
-
+.main_count3 textarea {
+	margin-top: 24px;
+	width: 100%;
+	height: 189px;
+	outline: none;
+	resize: none;
+	border-radius: 6px;
+	box-shadow: 0 1px 14px 0 inset;
+ 
+}
 @media (max-width:772px){
 	.main_left{
 		margin: 0 auto;

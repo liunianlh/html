@@ -8,6 +8,10 @@ $actor=$_POST["actor"];
 $about=$_POST["about"];
 //introduce
 $url="img/121edq.jpg";
+
+//$url=$_POST["url"];
+//echo $url;
+
 $hot=$_POST["hot"];
 //releasea
 $release=$_POST["release"];
