@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	</head>
+
+	<body>
+		<!--底部导航-->
+		<nav class="mui-bar mui-bar-tab" id="nav">
+			<a class="mui-tab-item mui-active" name="index">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" name="find">
+				<span class="mui-icon mui-icon-search"></span>
+				<span class="mui-tab-label">发现</span>
+			</a>
+			<a class="mui-tab-item" name="follow">
+				<span class="mui-icon mui-icon-plusempty"></span>
+				<span class="mui-tab-label">关注</span>
+			</a>
+			<a class="mui-tab-item" name="me">
+				<span class="mui-icon mui-icon-person"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+	</body>
+
+</html>
+<script type="text/javascript" charset="utf-8">
+	//mui的初始化，做mui的配置项，每个窗口必须存在
+	mui.init({
+		//当页面打开时，加载子页面
+		subpages: [{
+			url: "./template/index.html", //子页面HTML地址，支持本地地址和网络地址
+			id: "main_index", //子页面标志
+			styles: {
+				top: "0px", //子页面顶部位置
+				bottom: "50px", //子页面底部位置
+				//		        width:subpage-width,//子页面宽度，默认为100%
+				//		        height:subpage-height,//子页面高度，默认为100%
+			}
+		}],
+		//预加载的页面(提前加载)
+		preloadPages: [{
+				url: "template/find.html",
+				id: "main_find",
+				styles: {
+					top: "0px", //子页面顶部位置
+					bottom: "50px", //子页面底部位置
+				}
+			},
+			{
+				url: "template/follow.html",
+				id: "main_follow",
+				styles: {
+					top: "0px", //子页面顶部位置
+					bottom: "50px", //子页面底部位置
+				}
+			},
+			{
+				url: "template/me.html",
+				id: "main_me",
+				styles: {
+					top: "0px", //子页面顶部位置
+					bottom: "50px", //子页面底部位置
+				}
+			}
+		],
+		//			  preloadLimit:5//预加载窗口数量限制(一旦超出,先进先出)默认不限制
+	});
+
+	//监听
+	//    	js监听
+	//		选择DOM对象必须用js的方法
+	//		document.querySelector().addEventListener("事件名称",function(){
+	//			
+	//		})
+	//    	jq的监听方式
+	//		mui("选择器").on("事件监听","选择器",function(){
+	//			
+	//		});
+	//    	$("选择器").on("事件监听","选择器",function(){
+	//			
+	//		});
+
+	//写相关的js，更换子页面
+	//    	mui("#nav").on("tap","a",function(){
+	//    		//获取页面的名称
+	//    		var name = $(this).attr("name");
+	//    		
+	//    		//打开页面
+	//    		mui.openWindow({
+	//			    url:"template/"+name+".html",
+	//			    id:"main_"+name,
+	//			    styles:{
+	//			      top:"0px",//新页面顶部位置
+	//			      bottom:"50px",//新页面底部位置
+	////			      width:newpage-width,//新页面宽度，默认为100%
+	////			      height:newpage-height,//新页面高度，默认为100%
+	//			    }
+	//			})
+	////    		console.log($(this).attr("name"));
+	//    	});
+
+	//属于html5+的方法放在mui.plusready
+	mui.plusReady(function() {
+
+		//获取所有的窗口
+		var all = plus.webview.all();
+		//			for(var i=0;i<all.length;i++){
+		//				console.log(all[i].getURL());
+		//			}
+		//监控点击事件
+		var index, find, follow, me;
+		mui("#nav").on("tap", "a", function() {
+			//获取页面的名称
+			var name = $(this).attr("name");
+			//切换窗口(根据窗口的id进行切换)
+			switch(name) {
+				case "index":
+					index = plus.webview.getWebviewById("main_index");
+					index.show();
+					find.hide();
+					follow.hide();
+					me.hide();
+					break;
+				case "find":
+					find = plus.webview.getWebviewById("main_find");
+					find.show();
+					break;
+				case "follow":
+					follow = plus.webview.getWebviewById("main_follow");
+					follow.show();
+					break;
+				case "me":
+					me = plus.webview.getWebviewById("main_me");
+					me.show();
+					break;
+			}
+		});
+	});
+</script>

@@ -1,0 +1,39 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"images/11.jpg",
+			"images/33.jpg",
+			"images/22.jpg",
+			"js/jquery-3.2.1.min.js",
+			"fonts/mui.ttf",
+			"template/index.html"
+		],
+		"refer": [
+			"template/index.html",
+			"template/find.html",
+			"template/follow.html",
+			"template/me.html"
+		]
+	},
+	"template/index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/jquery-3.2.1.min.js",
+			"images/33.jpg",
+			"images/44.jpg",
+			"images/11.jpg",
+			"images/22.jpg",
+			"fonts/mui.ttf"
+		]
+	},
+	"template/follow.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/jquery-3.2.1.min.js"
+		]
+	}
+}

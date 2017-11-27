@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+		<style>
+			#icon {
+				width: 100%;
+				list-style: none;
+				position: absolute;
+				z-index: 999;
+				bottom: 5px;
+				padding-left: 37%;
+			}
+			.mui-slider-item img{
+				height: 150px;
+			}
+			#icon li {
+				width: 12px;
+				height: 12px;
+				border-radius: 6px;
+				border: 1px solid black;
+				float: left;
+				margin: 0px 5px;
+			}
+			
+			.active {
+				background: white;
+			}
+			
+			#button_top {
+				padding-left: 300px;
+				padding-top: 20px;
+			}
+			
+			#button_bottom {
+				padding-left: 138px;
+				padding-top: 450px;
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">首页</h1>
+			<!-- 侧滑导航根容器 -->
+			<div class="mui-off-canvas-wrap mui-draggable">
+				<!-- 菜单容器 -->
+				<aside class="mui-off-canvas-left">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!-- 菜单具体展示内容 -->
+							<h1>11111</h1>
+						</div>
+					</div>
+				</aside>
+				<!-- 主页面容器 -->
+				<div class="mui-inner-wrap">
+					<!-- 主页面标题 -->
+					<header class="mui-bar mui-bar-nav">
+						<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+						<h1 class="mui-title">首页</h1>
+					</header>
+					<div class="mui-content mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!-- 主界面具体展示内容 -->
+							...
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--内容页面-->
+		<div class="mui-content">
+			
+				
+				
+				
+			<!--轮播图-->
+			<div class="mui-slider">
+				<div class="mui-slider-group  mui-slider-loop">
+					<div class="mui-slider-item">
+						<a href="#"><img src="../images/1.jpg" /></a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#"><img src="../images/2.jpg" /></a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#"><img src="../images/3.jpg" /></a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#"><img src="../images/4.jpg" /></a>
+					</div>
+					<!--支持循环，需要重复图片节点-->
+
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#"><img src="../images/1.jpg" /></a>
+					</div>
+				</div>
+
+				<ul id="icon">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+
+			<!--列表内容-->
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					体育快讯
+				</li>
+			</ul>
+			<div class="mui-content">
+				<div class="mui-row">
+					<div class="mui-col-sm-6" style="padding: 5px;">
+						<div class="mui-card">
+							<!--页眉，放置标题-->
+							<!--<div class="mui-card-header">页眉</div>-->
+							<!--内容区-->
+							<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)" >
+								<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
+							</div>
+							<!--页脚，放置补充信息或支持的操作-->
+							<div class="mui-card-footer">页脚</div>
+						</div>
+					</div>
+					<div class="mui-col-sm-6" style="padding: 5px;">
+						<div class="mui-card">
+							<!--页眉，放置标题-->
+							<!--<div class="mui-card-header">页眉</div>-->
+							<!--内容区-->
+							<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)" >
+								<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
+							</div>
+							<!--页脚，放置补充信息或支持的操作-->
+							<div class="mui-card-footer">页脚</div>
+						</div>
+					</div>
+					<div class="mui-col-sm-6" style="padding: 5px;">
+						<div class="mui-card">
+							<!--页眉，放置标题-->
+							<!--<div class="mui-card-header">页眉</div>-->
+							<!--内容区-->
+							<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)" >
+								<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
+							</div>
+							<!--页脚，放置补充信息或支持的操作-->
+							<div class="mui-card-footer">页脚</div>
+						</div>
+					</div>
+					<div class="mui-col-sm-6" style="padding: 5px;">
+						<div class="mui-card">
+							<!--页眉，放置标题-->
+							<!--<div class="mui-card-header">页眉</div>-->
+							<!--内容区-->
+							<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)" >
+								<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
+							</div>
+							<!--页脚，放置补充信息或支持的操作-->
+							<div class="mui-card-footer">页脚</div>
+						</div>
+					</div>
+					<div class="mui-col-sm-6" style="padding: 5px;">
+						<div class="mui-card">
+							<!--页眉，放置标题-->
+							<!--<div class="mui-card-header">页眉</div>-->
+							<!--内容区-->
+							<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)" >
+								<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
+							</div>
+							<!--页脚，放置补充信息或支持的操作-->
+							<div class="mui-card-footer">页脚</div>
+						</div>
+					</div>
+					<div class="mui-col-sm-6" style="padding: 5px;">
+						<div class="mui-card">
+							<!--页眉，放置标题-->
+							<!--<div class="mui-card-header">页眉</div>-->
+							<!--内容区-->
+							<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)" >
+								<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
+							</div>
+							<!--页脚，放置补充信息或支持的操作-->
+							<div class="mui-card-footer">页脚</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</body>
+
+</html>
+<script type="text/javascript" charset="utf-8">
+	//mui的初始化，做mui的配置项，每个窗口必须存在
+	mui.init();
+
+	var a = mui('.mui-slider');
+	a.slider({
+		interval: 1000 //自动轮播周期，若为0则不自动播放，默认为0；
+	});
+
+	//
+	//监听轮播图
+	document.querySelector('.mui-slider').addEventListener("slide", function(event) {
+		//		console.log(event.detail.slideNumber);
+		//		jQuery
+		var num = event.detail.slideNumber;
+
+		//	给当前图片对应的标志增加样式
+		var lis = $("#icon li");
+		//	去掉样式
+		lis.removeClass("active");
+		lis.eq(num).addClass("active");
+		//
+		//		if(event.detail.slideNumber == 3) {
+		//			$("#button_bottom").css("display", "block");
+		//			a.slider({
+		//				interval: 1000 //自动轮播周期，若为0则不自动播放，默认为0；
+		//			});
+		//
+		//		}
+
+	});
+</script>
