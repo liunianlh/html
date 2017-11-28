@@ -17,9 +17,11 @@
 				bottom: 5px;
 				padding-left: 37%;
 			}
-			.mui-slider-item img{
+			
+			.mui-slider-item img {
 				height: 150px;
 			}
+			
 			#icon li {
 				width: 12px;
 				height: 12px;
@@ -43,158 +45,181 @@
 				padding-top: 450px;
 				display: none;
 			}
+			
+			.tou {
+				width: 80px;
+				height: 80px;
+				border-radius: 40px;
+				margin: 0 auto;
+				background-image: url(../images/qqtou.jpg);
+				border: 1px solid white;
+			}
 		</style>
 	</head>
 
 	<body>
-		<header class="mui-bar mui-bar-nav">
-			<h1 class="mui-title">首页</h1>
-			<!-- 侧滑导航根容器 -->
-			<div class="mui-off-canvas-wrap mui-draggable">
-				<!-- 菜单容器 -->
-				<aside class="mui-off-canvas-left">
-					<div class="mui-scroll-wrapper">
-						<div class="mui-scroll">
-							<!-- 菜单具体展示内容 -->
-							<h1>11111</h1>
+
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable">
+			<!-- 菜单容器 -->
+			<aside class="mui-off-canvas-left">
+				<div class="mui-scroll-wrapper" style="background-image: url(../images/beijing.jpg);">
+					<div class="mui-scroll">
+
+						<div class="mui-col-sm-6">
+							<div class="mui-card mui-card-media" style="background-image:url(../images/top1.jpg);">
+								<!--头像-->
+								<div class="mui-card-content mui-card-media tou">
+
+								</div>
+								<!--页脚，放置补充信息或支持的操作-->
+
+								<div class="mui-card-footer">
+									<p style="color: white;margin: 0 auto; font-size: 30px;">越长大越孤单</p>
+								</div>
+							</div>
 						</div>
+						<ul class="mui-table-view" style="opacity: 0.4; ">
+							<li class="mui-table-view-cell mui-icon mui-icon-contact"><span style="font-size: 20px;">个人中心</span></li>
+							<li class="mui-table-view-cell mui-icon mui-icon-videocam"><span style="font-size: 20px;">我的视频</span></li>
+							<li class="mui-table-view-cell mui-icon mui-icon-download"><span style="font-size: 20px;">我的下载</span></li>							
+							<li class="mui-table-view-cell mui-icon mui-icon-weixin"><span style="font-size: 20px;">分享到微信</span></li>
+							<li class="mui-table-view-cell mui-icon mui-icon-qq"><span style="font-size: 20px;">分享到QQ</span></li>
+							<li class="mui-table-view-cell mui-icon mui-icon mui-icon-pengyouquan"><span style="font-size: 20px;">分享到朋友圈</span></li>
+						</ul>
+			<button type="button" class="mui-btn mui-btn-outlined mui-icon mui-icon-gear" style="margin-top: 26%; margin-left: 67%;">设置</button>
 					</div>
-				</aside>
-				<!-- 主页面容器 -->
-				<div class="mui-inner-wrap">
-					<!-- 主页面标题 -->
-					<header class="mui-bar mui-bar-nav">
-						<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
-						<h1 class="mui-title">首页</h1>
-					</header>
-					<div class="mui-content mui-scroll-wrapper">
-						<div class="mui-scroll">
-							<!-- 主界面具体展示内容 -->
-							...
+				</div>
+			</aside>
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+
+				<header class="mui-bar mui-bar-nav ">
+
+					<!--左边的 图标-->
+					<span class="mui-icon mui-icon-bars mui-pull-left" id="header_left"></span>
+
+					<a class="mui-title">首页</a>
+					<!-- 侧滑导航根容器 -->
+
+					<!--右边的图标-->
+					<span class="mui-icon mui-icon-more mui-pull-right"></span>
+				</header>
+				<!--内容页面-->
+				<div class="mui-content mui-scroll-wrapper ">
+					<!--允许滑动-->
+
+					<div class="mui-scroll">
+
+						<!--轮播图-->
+						<div class="mui-slider">
+							<div class="mui-slider-group  mui-slider-loop">
+								<div class="mui-slider-item">
+									<a href="#"><img src="../images/1.jpg" /></a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#"><img src="../images/2.jpg" /></a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#"><img src="../images/3.jpg" /></a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#"><img src="../images/4.jpg" /></a>
+								</div>
+								<!--支持循环，需要重复图片节点-->
+
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#"><img src="../images/1.jpg" /></a>
+								</div>
+							</div>
+
+							<ul id="icon">
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+
+						<!--列表内容-->
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								体育快讯
+							</li>
+						</ul>
+						<div class="mui-content">
+							<div class="mui-row">
+								<div class="mui-col-sm-6" style="padding: 5px;">
+									<div class="mui-card">
+
+										<!--内容区-->
+										<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)">
+
+										</div>
+										<!--页脚，放置补充信息或支持的操作-->
+										<div class="mui-card-footer">页脚</div>
+									</div>
+								</div>
+								<div class="mui-col-sm-6" style="padding: 5px;">
+									<div class="mui-card">
+
+										<!--内容区-->
+										<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)">
+											<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
+										</div>
+										<!--页脚，放置补充信息或支持的操作-->
+										<div class="mui-card-footer">页脚</div>
+									</div>
+								</div>
+								<div class="mui-col-sm-6" style="padding: 5px;">
+									<div class="mui-card">
+
+										<!--内容区-->
+										<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)">
+
+										</div>
+										<!--页脚，放置补充信息或支持的操作-->
+										<div class="mui-card-footer">页脚</div>
+									</div>
+								</div>
+								<div class="mui-col-sm-6" style="padding: 5px;">
+									<div class="mui-card">
+
+										<!--内容区-->
+										<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)">
+
+										</div>
+										<!--页脚，放置补充信息或支持的操作-->
+										<div class="mui-card-footer">页脚</div>
+									</div>
+								</div>
+								<div class="mui-col-sm-6" style="padding: 5px;">
+									<div class="mui-card">
+
+										<!--内容区-->
+										<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)">
+
+										</div>
+										<!--页脚，放置补充信息或支持的操作-->
+										<div class="mui-card-footer">页脚</div>
+									</div>
+								</div>
+								<div class="mui-col-sm-6" style="padding: 5px;">
+									<div class="mui-card">
+
+										<!--内容区-->
+										<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)">
+
+										</div>
+										<!--页脚，放置补充信息或支持的操作-->
+										<div class="mui-card-footer">页脚</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
-		<!--内容页面-->
-		<div class="mui-content">
-			
-				
-				
-				
-			<!--轮播图-->
-			<div class="mui-slider">
-				<div class="mui-slider-group  mui-slider-loop">
-					<div class="mui-slider-item">
-						<a href="#"><img src="../images/1.jpg" /></a>
-					</div>
-					<div class="mui-slider-item">
-						<a href="#"><img src="../images/2.jpg" /></a>
-					</div>
-					<div class="mui-slider-item">
-						<a href="#"><img src="../images/3.jpg" /></a>
-					</div>
-					<div class="mui-slider-item">
-						<a href="#"><img src="../images/4.jpg" /></a>
-					</div>
-					<!--支持循环，需要重复图片节点-->
-
-					<div class="mui-slider-item mui-slider-item-duplicate">
-						<a href="#"><img src="../images/1.jpg" /></a>
-					</div>
-				</div>
-
-				<ul id="icon">
-					<li class="active"></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
-
-			<!--列表内容-->
-			<ul class="mui-table-view">
-				<li class="mui-table-view-cell">
-					体育快讯
-				</li>
-			</ul>
-			<div class="mui-content">
-				<div class="mui-row">
-					<div class="mui-col-sm-6" style="padding: 5px;">
-						<div class="mui-card">
-							<!--页眉，放置标题-->
-							<!--<div class="mui-card-header">页眉</div>-->
-							<!--内容区-->
-							<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)" >
-								<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
-							</div>
-							<!--页脚，放置补充信息或支持的操作-->
-							<div class="mui-card-footer">页脚</div>
-						</div>
-					</div>
-					<div class="mui-col-sm-6" style="padding: 5px;">
-						<div class="mui-card">
-							<!--页眉，放置标题-->
-							<!--<div class="mui-card-header">页眉</div>-->
-							<!--内容区-->
-							<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)" >
-								<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
-							</div>
-							<!--页脚，放置补充信息或支持的操作-->
-							<div class="mui-card-footer">页脚</div>
-						</div>
-					</div>
-					<div class="mui-col-sm-6" style="padding: 5px;">
-						<div class="mui-card">
-							<!--页眉，放置标题-->
-							<!--<div class="mui-card-header">页眉</div>-->
-							<!--内容区-->
-							<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)" >
-								<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
-							</div>
-							<!--页脚，放置补充信息或支持的操作-->
-							<div class="mui-card-footer">页脚</div>
-						</div>
-					</div>
-					<div class="mui-col-sm-6" style="padding: 5px;">
-						<div class="mui-card">
-							<!--页眉，放置标题-->
-							<!--<div class="mui-card-header">页眉</div>-->
-							<!--内容区-->
-							<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)" >
-								<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
-							</div>
-							<!--页脚，放置补充信息或支持的操作-->
-							<div class="mui-card-footer">页脚</div>
-						</div>
-					</div>
-					<div class="mui-col-sm-6" style="padding: 5px;">
-						<div class="mui-card">
-							<!--页眉，放置标题-->
-							<!--<div class="mui-card-header">页眉</div>-->
-							<!--内容区-->
-							<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)" >
-								<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
-							</div>
-							<!--页脚，放置补充信息或支持的操作-->
-							<div class="mui-card-footer">页脚</div>
-						</div>
-					</div>
-					<div class="mui-col-sm-6" style="padding: 5px;">
-						<div class="mui-card">
-							<!--页眉，放置标题-->
-							<!--<div class="mui-card-header">页眉</div>-->
-							<!--内容区-->
-							<div class="mui-card-contentmui-card-media" style="width: 150px; height: 200px;background-image:url(../images/1.jpg)" >
-								<!--<img src="../images/55.jpg" style="width: 150px; height: 200px;">-->
-							</div>
-							<!--页脚，放置补充信息或支持的操作-->
-							<div class="mui-card-footer">页脚</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
 	</body>
 
 </html>
@@ -219,14 +244,17 @@
 		//	去掉样式
 		lis.removeClass("active");
 		lis.eq(num).addClass("active");
-		//
-		//		if(event.detail.slideNumber == 3) {
-		//			$("#button_bottom").css("display", "block");
-		//			a.slider({
-		//				interval: 1000 //自动轮播周期，若为0则不自动播放，默认为0；
-		//			});
-		//
-		//		}
+	
 
 	});
+	
+	mui(".mui-scroll-wrapper").scroll({
+		deceleration: 0.0005	
+	});
+	
+	
+	document.getElementById("header_left").addEventListener("tap",function(){
+		mui(".mui-off-canvas-wrap").offCanvas().toggle();
+	});
+	
 </script>

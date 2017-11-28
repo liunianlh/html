@@ -52,7 +52,7 @@
 				url: "template/find.html",
 				id: "main_find",
 				styles: {
-					top: "0px", //子页面顶部位置
+					top: "px", //子页面顶部位置
 					bottom: "50px", //子页面底部位置
 				}
 			},
@@ -127,9 +127,16 @@
 				case "index":
 					index = plus.webview.getWebviewById("main_index");
 					index.show();
-					find.hide();
-					follow.hide();
-					me.hide();
+					if(find !=undefined){
+						find.hide();
+					}
+					if(follow !=undefined){
+						follow.hide();
+					}
+					if(me!=undefined){
+						me.hide();
+					}
+					
 					break;
 				case "find":
 					find = plus.webview.getWebviewById("main_find");
